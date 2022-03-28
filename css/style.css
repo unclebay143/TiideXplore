@@ -321,6 +321,138 @@ header .icons i:hover {
   color: #b4d330;
 }
 
+/* Review Section */
+
+.testimonials {
+  padding-top: 40px;
+  background: #fff;
+  color: #434343;
+  text-align: center;
+}
+
+.inner {
+  max-width: 1300px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0, 10px;
+}
+
+.inner .guest {
+  font-size: 25px;
+  padding: 20px 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .best-directory span {
+  padding: 10px 0;
+}
+
+.best-directory h2 {
+  padding: 10px 0;
+}
+
+.best-directory p {
+  text-align: left;
+  padding: 10px 0;
+  max-width: 250px;
+}
+
+.btn {
+  background-color: #D8DFE9;
+  color: #04566E;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 13px 18px;
+  border-radius: 26px;
+  border: 1px solid #04566E;
+  margin: 10px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.5s;
+} 
+
+.btn:hover {
+  background-color: #04566E;
+  color: #fff;
+
+  transition: 0.5s;
+}*/
+
+
+.col {
+  flex: 33.33%;
+  max-width: 35%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.testimonial {
+  background: #fff;
+  box-shadow: 0 4px 8px 0 #04566E;
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  height: 300px;
+}
+
+.testimonial:hover {
+  box-shadow: 0 8px 16px 0 rgba(29.8, 71.76, 64.71, 0.4);
+  background-color: #fff
+}
+
+.review-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 80px;
+}
+
+.name{
+  padding: 0 10px;
+}
+
+.name h3{
+  padding: 5px 0;
+}
+.name p {
+  text-align: left;
+  padding-left: 33px;
+}
+
+.name .star {
+  color: #04566E;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #D8DFE9;
+  color: #04566E;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 13px 18px;
+  border-radius: 26px;
+  border: 1px solid #04566E;
+  margin: 10px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.5s;
+} 
+
+.btn:hover {
+  background-color: #04566E;
+  color: #fff;
+  transition: 0.5s;
+}
+
+
 /* MAKING THE PAGE RESPONSIVE */
 
 /* media queries  */
