@@ -28,8 +28,18 @@ html {
   scroll-padding-top: 6rem;
   scroll-behavior: smooth;
 }
+body{
+  /* font-family: 'Poppins', sans-serif; */
+  color: var(--secondary);
+  transition: all 0.5s ease-in-out;
+}
+body a{
+  text-decoration: none;
+  color: inherit;
+}
 
-section {
+
+header section{
   padding: 2rem 9%;
 }
 
@@ -68,11 +78,11 @@ section {
 }
 
 header {
-  position: fixed;
+  position: static;
   top: 0;
   left: 0;
   right: 0;
-  /* background-color: #04566e; */
+   /* background-color: #04566e;  */
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -134,6 +144,8 @@ header .icons i:hover {
   flex-flow: column;
   position: relative;
   z-index: 0;
+  padding: 2rem 9%;
+
 }
 
 .home .content {
@@ -185,7 +197,252 @@ header .icons i:hover {
   color: #fff;
 }
 
-/* PACKAGES SECTION */
+/* SERVICES STARTED */
+.section{
+  padding: 50px 50px;
+
+}
+.section h2{
+  font-size: 25px;
+  font-weight: bold;
+  color: ;
+  margin-bottom: 30px ;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* Services*/
+.services{
+  margin: 0 auto;
+  /* text-align: center; */
+}
+.service p{
+  font-size: 70%;
+}
+.services-wrapper{
+  display: flex;
+  width: 900px;
+  /* text-align: center; */
+  margin: 0 auto;
+
+}
+.service{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin: 10px;
+}
+.service:hover{
+  opacity: 0.6;
+  background-color: transparent;
+}
+.service img{
+  width: 190px;
+  height: 150px;
+}
+/* Hotel */
+.place-card-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  height: auto;
+
+}
+.place-card{
+  width: 47%;
+  height: 300px;
+  margin-bottom: 70px;
+
+}
+.btns{
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  background-color: var(--primary);
+  margin: 10px auto;
+  
+}
+.btns:hover{
+  padding: 15px 30px;
+}
+.place-card img {
+  object-fit: fill;
+  width: 90%;
+  height: 300px;
+}
+.place-card img:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
+.card-content{
+  width: 80%;
+}
+
+/* Apartment */
+.apartment-wrapper{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 20px;
+}
+.apartment-card{
+  width: 400px;
+  cursor: pointer;
+}
+.apartment-card img:hover{
+  opacity: 0.7;
+}
+.apartment-card img{
+  width: 95%;
+}
+.apartment-card a:hover{
+  text-decoration: underline;
+  line-height: 2;
+  letter-spacing: 2px;
+}
+/* Food */
+.Food{
+  background-color: var(--primary);
+  border-radius: 30px;
+
+}
+.Food h2{
+  color: white;
+}
+.rest-card-wrapper{
+  /* width: 100%; */
+  max-width:1000px ;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  /* margin-bottom: 80px; */
+  height: auto;
+
+}
+
+  .rest-card{
+      width: 300px;
+      height: auto;
+  
+  }
+  .rest-card img {
+      object-fit: fill;
+      width: 90%;
+      height: 200px;
+      cursor: pointer;
+  }
+  .food .card-content{
+      width: 80%;
+      font-size: 30%;
+  }
+  .rest-card p{
+      color: white;
+      font-size: 80%;
+  }
+  .rest-card h3{
+      color: white;
+  }
+  .rest-card h6{
+      font-size: 55%;
+      color: white;
+      margin-bottom: 10px;
+  }
+  .btn-s{
+      padding: 5px 10px;
+      border: 0;
+      border-radius: 20px;
+      cursor: pointer;
+      margin:5px 57px;
+  }
+  .btn-s:hover{
+    padding: 10px 20px;
+    opacity: 0.5;
+  }
+  
+
+
+/* Taxis*/
+.taxis{
+  margin-top: 50px;
+  border-top: 3px solid var(--secondary);
+  border-bottom: 3px solid var(--secondary); 
+  border-radius: 50px;
+  /* height: 500px;    */
+  padding: 20px;
+}
+.taxi-wrapper{
+  width: 1300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 30px;
+}
+.taxi-card{
+  width: 30%;
+}
+.taxi-card img{
+  width: 80%;
+  height: 200px;
+}
+.taxi-card img:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+.taxi-card p{
+  font-size: 70%;
+  width: 80%;
+}
+.taxi-card a{
+  color: var(--primary);
+}
+.taxi-card a:hover{
+  letter-spacing: 2px;
+  text-decoration: underline;
+  line-height: 2;
+}
+.car-wrapper{
+  display: flex;
+  /* width: 900px; */
+  justify-content: space-between;
+  /* text-align: center; */
+  /* margin: 0 auto; */
+
+}
+.car-card{
+  width: 300px;
+  height: 200px;
+
+  margin: 0 auto;
+  margin: 10px;
+}
+.car-card a:hover{
+  text-decoration: underline;
+  line-height: 2;
+  letter-spacing: 2px;
+  color: green;
+}
+.car img:hover{
+  opacity: 0.6;
+  background-color: transparent;
+}
+.car img{
+  width: 250px;
+  height: 150px;
+}
+.car-brief{
+  font-size: 70%;
+}
+
+/* PACKAGES SECTION
 
 .section h2 {
   font-size: 28px;
@@ -262,11 +519,13 @@ header .icons i:hover {
   opacity: 0.8;
   background-color: rgb(3, 44, 3);
   
-}
+} */
 
 /* FOOTER SECTION */
 .footer {
   background-color: #04566e;
+  padding: 2rem 9%;
+
 }
 
 .footer .box-container {
@@ -499,6 +758,21 @@ header .icons i:hover {
     margin: 1.5rem 0;
     background-color: #04566e;
   }
+  .services-wrapper{
+    flex-direction: column;
+  }
+  .service{
+    margin: 15px auto;
+    width: 350px;
+    height: 350px;
+  }
+  .service img{
+    width: 300px;
+    height: 300px;
+  }
+  .place-card{
+    width: 90%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -512,5 +786,8 @@ header .icons i:hover {
 
   .contact .row form .inputBox input {
     width: 100%;
+  }
+  .services-wrapper{
+    flex-direction: column;
   }
 }
