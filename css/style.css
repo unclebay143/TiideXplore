@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
+
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -123,7 +124,8 @@ header .icons i:hover {
 }
 
 .home {
-  background-image: url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+  background-image: 
+    url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
   background-size: cover;
   background-position: 100%;
   height: 100vh;
@@ -185,8 +187,7 @@ header .icons i:hover {
 
 /* PACKAGES SECTION */
 
-
-.section h2{
+.section h2 {
   font-size: 28px;
   font-weight: bold;
   color: teal;
@@ -200,7 +201,6 @@ header .icons i:hover {
   align-items: center;
   gap: 100px;
   margin-top: 2rem;
-
 }
 
 .packages-card {
@@ -231,7 +231,7 @@ header .icons i:hover {
 .package-brief {
   font-size: 15px;
   display: flex;
-  font-family: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto&display=swap');
+  font-family: url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto&display=swap");
 }
 
 .project-links {
@@ -240,9 +240,7 @@ header .icons i:hover {
   align-items: center;
   margin-top: 10px;
   gap: 10px;
-
 }
-
 
 .btn{
   background-color: teal;
@@ -266,7 +264,6 @@ header .icons i:hover {
   
 }
 
-
 /* FOOTER SECTION */
 .footer {
   background-color: #04566e;
@@ -276,6 +273,7 @@ header .icons i:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+  
 }
 
 .footer .box-container .box {
