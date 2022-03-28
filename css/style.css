@@ -11,6 +11,15 @@
   text-decoration: none;
   transition: all 0.2s linear;
 }
+:root{
+  /* colors */
+
+  --primary:#04556E;
+  --secondary:#022831;
+  -tertiary:#689368;
+
+}
+
 
 html {
   font-size: 62.5%;
