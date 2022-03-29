@@ -35,7 +35,7 @@ main{
 .section h2{
     font-size: 25px;
     font-weight: bold;
-    color: ;
+    /*color:;*/
     margin-bottom: 30px ;
     text-transform: uppercase;
     text-align: center;
