@@ -91,4 +91,24 @@
   header .navbar a:hover {
     color: #022831;
   }
+ /* header .icons i {
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2rem;
+  }*/
+  .section{
+    padding: 50px 50px;
+
+}
+.section h2{
+    font-size: 25px;
+    font-weight: bold;
+    color:green ;
+    margin-bottom: 30px ;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+  
   
