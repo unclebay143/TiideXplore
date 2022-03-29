@@ -1,6 +1,12 @@
+<<<<<<< HEAD:css/style.css
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
+=======
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+
+>>>>>>> 53521a4496d8b38023be1855d33edb1a355c6e26:assets/css/booking.css
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -59,15 +65,27 @@ section {
 }
 
 header {
+<<<<<<< HEAD:css/style.css
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
+=======
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #04566e;
+>>>>>>> 53521a4496d8b38023be1855d33edb1a355c6e26:assets/css/booking.css
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2rem 9%;
+<<<<<<< HEAD:css/style.css
+=======
+  height: 10vh;
+>>>>>>> 53521a4496d8b38023be1855d33edb1a355c6e26:assets/css/booking.css
 }
 
 header .logo {
@@ -114,10 +132,18 @@ header .icons i:hover {
 }
 
 .home {
+<<<<<<< HEAD:css/style.css
   background-image: url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
   background-size: cover;
   background-position: 100%;
   height: 100vh;
+=======
+  background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+  background-size: cover;
+  background-position: 100%;
+  height: 120vh;
+>>>>>>> 53521a4496d8b38023be1855d33edb1a355c6e26:assets/css/booking.css
   display: flex;
   justify-content: center;
   flex-flow: column;
@@ -158,6 +184,7 @@ header .icons i:hover {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+<<<<<<< HEAD:css/style.css
   font-size: 20px;
   background-color: #04566e;
   width: 14%;
@@ -166,6 +193,14 @@ header .icons i:hover {
   text-align: center;
   margin-top: 70px;
   font-weight: bold;
+=======
+  font-size: 26px;
+  background-color: #04566e;
+  width: 20%;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 70px;
+>>>>>>> 53521a4496d8b38023be1855d33edb1a355c6e26:assets/css/booking.css
 }
 
 .home .discover:hover {
@@ -176,6 +211,7 @@ header .icons i:hover {
   color: #fff;
 }
 
+<<<<<<< HEAD:css/style.css
 /* FOOTER SECTION */
 .footer {
   background-color: #04566e;
@@ -467,6 +503,132 @@ header .icons i:hover {
 }
 
 .home .discover span {
+=======
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+  background: linear-gradient(30deg, rgba(0,0,0, 0.3), rgba(0,0,0,0.4)),
+              url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: repeat;
+}
+/*The booking page style */
+.booking-form-container{
+  width: 500px;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items: center;*/
+  padding: 0 20px 20px 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 200px;
+}
+.booking-form-container h2{
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
+.input-container{
+  display: flex;
+  width: 100%;
+  padding-bottom: 16px;
+}
+.icon{
+  width: 50px;
+  padding: 12px;
+  background-color: #04566e;
+  color: #fff;
+  text-align: center;
+}
+.input_text{
+  width: 100%;
+  padding: 12px;
+}
+
+.btn{
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #04566e;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.btn:hover{
+  background-color: #689368;
+}
+
+.date-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* The payment page style */
+.payment-container{
+  width: 500px;
+  margin: auto;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 400px;
+  margin-top: 200px;
+}
+.payment-header h2{
+  font-size: 24px;
+  color: #fff;
+}
+.payment-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+}
+.img-container{
+  padding-left: 12px;
+  margin-left: 10px;
+
+}
+.payment-header img{
+  width: 40px;
+  height: 40px;
+}
+.payment-content{
+  margin: 10px;
+}
+.input-section{
+  width: 100%;
+  padding: 10px 0;
+  padding-left: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.card-brief{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+label{
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 10px;
+>>>>>>> 53521a4496d8b38023be1855d33edb1a355c6e26:assets/css/booking.css
   color: #fff;
 }
 
@@ -479,6 +641,10 @@ header .icons i:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+<<<<<<< HEAD:css/style.css
+=======
+  
+>>>>>>> 53521a4496d8b38023be1855d33edb1a355c6e26:assets/css/booking.css
 }
 
 .footer .box-container .box {
@@ -586,4 +752,8 @@ header .icons i:hover {
   .contact .row form .inputBox input {
     width: 100%;
   }
+<<<<<<< HEAD:css/style.css
 }
+=======
+}
+>>>>>>> 53521a4496d8b38023be1855d33edb1a355c6e26:assets/css/booking.css
