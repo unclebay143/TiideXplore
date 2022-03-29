@@ -74,7 +74,7 @@ header section {
 }
 
 header {
-  position: static;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -147,31 +147,34 @@ header .icons i:hover {
 }
 
 .home .content h2 {
-  font-size: 55px;
+  font-size: 64px;
   font-weight: bold;
   text-align: left;
   color: #fff;
   text-transform: none;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
 .home .content h3 {
-  font-size: 48px;
+  font-size: 54px;
   font-weight: normal;
   text-align: left;
   color: #fff;
+  margin-top: 10px;
   text-transform: none;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .home .content p {
-  font-size: 24px;
+  font-size: 30px;
   color: #fff;
   padding: 0.5rem 0;
   text-align: left;
+  margin-top: 10px;
 }
 
-.home .discover {
+/* .home .discover {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -189,7 +192,7 @@ header .icons i:hover {
 
 .home .discover span {
   color: #fff;
-}
+} */
 
 /* SERVICES STARTED */
 .section {
@@ -208,11 +211,13 @@ header .icons i:hover {
   /* text-align: center; */
 }
 .service p {
-  font-size: 70%;
+  font-size: 100%;
 }
 .services-wrapper {
   display: flex;
-  width: 900px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
   /* text-align: center; */
   margin: 0 auto;
 }
@@ -221,6 +226,9 @@ header .icons i:hover {
   height: 200px;
   margin: 0 auto;
   margin: 10px;
+}
+.service h4 {
+  font-size: 130%;
 }
 .service:hover {
   opacity: 0.6;
@@ -232,8 +240,10 @@ header .icons i:hover {
 }
 /* Hotel */
 .place-card-wrapper {
-  width: 100%;
+  max-width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-direction: row;
   gap: 50px;
   margin: 0 auto;
@@ -256,7 +266,8 @@ header .icons i:hover {
   margin: 10px auto;
 }
 .btns:hover {
-  padding: 15px 30px;
+  padding: 10px 30px;
+  opacity: 0.5;
 }
 .place-card img {
   object-fit: fill;
@@ -269,6 +280,7 @@ header .icons i:hover {
 }
 .card-content {
   width: 80%;
+  font-size: 140%;
 }
 
 /* Apartment */
@@ -276,6 +288,7 @@ header .icons i:hover {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
   gap: 20px;
 }
@@ -289,9 +302,16 @@ header .icons i:hover {
 .apartment-card img {
   width: 95%;
 }
+.apartment-card a {
+  padding-top: 10px;
+  font-size: 120%;
+}
+.apartment-card h5 {
+  font-size: 120%;
+}
 .apartment-card a:hover {
   text-decoration: underline;
-  line-height: 2;
+  /* line-height: ; */
   letter-spacing: 2px;
 }
 /* Food */
@@ -307,6 +327,7 @@ header .icons i:hover {
   max-width: 1000px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 50px;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -326,19 +347,16 @@ header .icons i:hover {
 }
 .food .card-content {
   width: 80%;
-  font-size: 30%;
-}
-.rest-card p {
-  color: white;
-  font-size: 80%;
+  font-size: 70%;
 }
 .rest-card h3 {
   color: white;
 }
 .rest-card h6 {
-  font-size: 55%;
+  font-size: 75%;
   color: white;
   margin-bottom: 10px;
+  height: 20px;
 }
 .btn-s {
   padding: 5px 10px;
@@ -348,7 +366,7 @@ header .icons i:hover {
   margin: 5px 57px;
 }
 .btn-s:hover {
-  padding: 10px 20px;
+  padding: 5px 20px;
   opacity: 0.5;
 }
 
@@ -362,15 +380,20 @@ header .icons i:hover {
   padding: 20px;
 }
 .taxi-wrapper {
-  width: 1300px;
+  max-width: 1300px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 0 auto;
-  gap: 30px;
+  /* gap: 30px; */
 }
 .taxi-card {
   width: 30%;
+}
+.taxi-card h3 {
+  font-size: 170%;
+  padding: 5px 0;
 }
 .taxi-card img {
   width: 80%;
@@ -381,21 +404,23 @@ header .icons i:hover {
   cursor: pointer;
 }
 .taxi-card p {
-  font-size: 70%;
+  font-size: 100%;
   width: 80%;
 }
 .taxi-card a {
   color: var(--primary);
+  font-size: 120%;
 }
 .taxi-card a:hover {
   letter-spacing: 2px;
   text-decoration: underline;
-  line-height: 2;
+  /* line-height: 2; */
 }
 .car-wrapper {
   display: flex;
   /* width: 900px; */
   justify-content: space-between;
+  align-items: center;
   /* text-align: center; */
   /* margin: 0 auto; */
 }
@@ -406,9 +431,15 @@ header .icons i:hover {
   margin: 0 auto;
   margin: 10px;
 }
+.car-card a {
+  font-size: 130%;
+  padding: 5px;
+  margin-top: 10px;
+  color: var(--primary);
+}
 .car-card a:hover {
   text-decoration: underline;
-  line-height: 2;
+  /* line-height: ; */
   letter-spacing: 2px;
   color: green;
 }
@@ -416,92 +447,22 @@ header .icons i:hover {
   opacity: 0.6;
   background-color: transparent;
 }
+/* .car-content {
+  height: 100px;
+} */
+.car-card h5 {
+  font-size: 120%;
+  /* height: 15px; */
+  padding-top: 2px;
+}
 .car img {
   width: 250px;
   height: 150px;
 }
 .car-brief {
-  font-size: 70%;
+  font-size: 110%;
+  /* height: 25px; */
 }
-
-/* PACKAGES SECTION
-
-.section h2 {
-  font-size: 28px;
-  font-weight: bold;
-  color: teal;
-  margin-bottom: 10px 0;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.packages-card-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 100px;
-  margin-top: 2rem;
-}
-
-.packages-card {
-  padding: 10px 6px;
-  box-shadow: 0 4px 8px 0 rgb(20, 197, 197);
-  transform: 0.3s;
-  border-radius: 5px;
-  width: 100%;
-  height: 200%;
-}
-
-.packages-card img {
-  width: 100%;
-  height: 200%;
-}
-
-.card-content {
-  width: 300px;
-  padding: 2px 16px;
-}
-
-.package-tittle {
-  color: rgb(5, 148, 148);
-  margin-bottom: 10px;
-  font-size: 17px;
-}
-
-.package-brief {
-  font-size: 15px;
-  display: flex;
-  font-family: url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto&display=swap");
-}
-
-.project-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  gap: 10px;
-}
-
-.btn{
-  background-color: teal;
-  color: rgb(80, 240, 80);
-  font-size: 12px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 10px 14px;
-  border-radius: 26px;
-  border: none;
-  margin: 8px;
-  letter-spacing: 1px;
-  cursor: pointer;
- transition: 0.5s;
-}
-
-
-.btn:hover{
-  opacity: 0.8;
-  background-color: rgb(3, 44, 3);
-  
-} */
 
 /* FOOTER SECTION */
 .footer {
@@ -558,136 +519,6 @@ header .icons i:hover {
   color: #b4d330;
 }
 
-/* Review Section */
-
-.testimonials {
-  padding-top: 40px;
-  background: #fff;
-  color: #434343;
-  text-align: center;
-}
-
-.inner {
-  max-width: 1300px;
-  margin: auto;
-  overflow: hidden;
-  padding: 0, 10px;
-}
-
-.inner .guest {
-  font-size: 25px;
-  padding: 20px 0;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-/* .best-directory span {
-  padding: 10px 0;
-}
-
-.best-directory h2 {
-  padding: 10px 0;
-}
-
-.best-directory p {
-  text-align: left;
-  padding: 10px 0;
-  max-width: 250px;
-}
-
-.btn {
-  background-color: #D8DFE9;
-  color: #04566E;
-  font-size: 15px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 13px 18px;
-  border-radius: 26px;
-  border: 1px solid #04566E;
-  margin: 10px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: 0.5s;
-} 
-
-.btn:hover {
-  background-color: #04566E;
-  color: #fff;
-
-  transition: 0.5s;
-}*/
-
-.col {
-  flex: 33.33%;
-  max-width: 35%;
-  box-sizing: border-box;
-  padding: 15px;
-}
-
-.testimonial {
-  background: #fff;
-  box-shadow: 0 4px 8px 0 #04566e;
-  padding: 30px;
-  border-radius: 5px;
-  display: flex;
-  height: 300px;
-}
-
-.testimonial:hover {
-  box-shadow: 0 8px 16px 0 rgba(29.8, 71.76, 64.71, 0.4);
-  background-color: #fff;
-}
-
-.review-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-top: 80px;
-}
-
-.name {
-  padding: 0 10px;
-}
-
-.name h3 {
-  padding: 5px 0;
-}
-.name p {
-  text-align: left;
-  padding-left: 33px;
-}
-
-.name .star {
-  color: #04566e;
-  margin-bottom: 10px;
-}
-
-.btn {
-  background-color: #d8dfe9;
-  color: #04566e;
-  font-size: 15px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 13px 18px;
-  border-radius: 26px;
-  border: 1px solid #04566e;
-  margin: 10px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.btn:hover {
-  background-color: #04566e;
-  color: #fff;
-  transition: 0.5s;
-}
-
 /* MAKING THE PAGE RESPONSIVE */
 
 /* media queries  */
@@ -696,6 +527,17 @@ header .icons i:hover {
   html {
     font-size: 55%;
   }
+  .place-card-wrapper {
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 45% 45%;
+  }
+  .place-card {
+    width: 100%;
+  }
+  .section {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -703,8 +545,68 @@ header .icons i:hover {
     padding: 2rem;
   }
 
-  section {
+  .home {
     padding: 2rem;
+  }
+  .footer {
+    padding: 2rem;
+  }
+  .place-card-wrapper {
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 45% 45%;
+  }
+  .place-card {
+    width: 100%;
+  }
+  .section {
+    padding: 10px;
+  }
+  .apartment {
+    margin-bottom: 100px;
+  }
+
+  .food {
+    margin-top: 100px;
+  }
+  .rest-card-wrapper {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 30% 30% 30%;
+    gap: 4%;
+  }
+  .rest-card {
+    width: 100%;
+  }
+  .btn-s {
+    margin: 5px 20px;
+  }
+  .taxi-wrapper {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 30% 30% 30%;
+    gap: 4%;
+  }
+  .taxi-card {
+    width: 100%;
+  }
+  .taxi-card img {
+    width: 100%;
+  }
+  .car {
+    margin-bottom: 60px;
+  }
+  .car-wrapper {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 5%;
+    justify-content: space-between;
+  }
+  .car-card {
+    width: 100%;
+  }
+  .car img {
+    width: 100%;
   }
 }
 
@@ -737,19 +639,92 @@ header .icons i:hover {
     background-color: #04566e;
   }
   .services-wrapper {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .services-wrapper a {
+    width: 40%;
   }
   .service {
-    margin: 15px auto;
-    width: 350px;
-    height: 350px;
+    margin: 0 auto;
+    width: 100%;
   }
   .service img {
-    width: 300px;
-    height: 300px;
+    width: 90%;
+  }
+  .section {
+    padding: 0px;
+    width: 90%;
+  }
+  .place-card-wrapper {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 0;
+    margin: 0px auto;
+    /* margin-left: 50px; */
+    /* text-align: center; */
   }
   .place-card {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .apartment {
+    margin-bottom: 100px;
+  }
+  .apartment-wrapper {
+    display: block;
+  }
+  .apartment-card {
     width: 90%;
+    margin-bottom: 30px;
+  }
+  .Food {
+    width: 80%;
+  }
+  .Food h2 {
+    margin-top: 20px;
+  }
+  .rest-card-wrapper {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .rest-card {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .rest-card img {
+    width: 100%;
+  }
+  .taxi-wrapper {
+    display: block;
+  }
+  .taxis {
+    width: 80%;
+  }
+  .taxi-card {
+    margin-bottom: 50px;
+  }
+  .taxi-card h3 {
+    font-size: 200%;
+  }
+  .taxi-card p {
+    font-size: 160%;
+  }
+  .car-wrapper {
+    display: block;
+    margin-bottom: 70px;
+  }
+  .car-card {
+    margin-bottom: 50px;
+  }
+  .car-content {
+    font-size: 180%;
   }
 }
 
@@ -766,6 +741,79 @@ header .icons i:hover {
     width: 100%;
   }
   .services-wrapper {
-    flex-direction: column;
+    display: block;
+  }
+  .service {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .service img {
+    width: 80%;
+  }
+  .section {
+    padding: 0px;
+    width: 90%;
+  }
+  .place-card-wrapper {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 0;
+    margin: 0px;
+  }
+  .place-card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .apartment-wrapper {
+    display: block;
+  }
+  .apartment-card {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .Food {
+    width: 80%;
+  }
+  .Food h2 {
+    margin-top: 20px;
+  }
+  .rest-card-wrapper {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .rest-card {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .rest-card img {
+    width: 100%;
+  }
+  .taxi-wrapper {
+    display: block;
+  }
+  .taxis {
+    width: 80%;
+  }
+  .taxi-card {
+    margin-bottom: 50px;
+  }
+  .taxi-card h3 {
+    font-size: 200%;
+  }
+  .taxi-card p {
+    font-size: 160%;
+  }
+  .car-wrapper {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .car-card {
+    margin-bottom: 50px;
+  }
+  .car-content {
+    font-size: 180%;
   }
 }
