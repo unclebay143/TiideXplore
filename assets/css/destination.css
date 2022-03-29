@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto&display=swap");
+
+
+/* PACKAGE CARDS */
+
+.section h2{
+  font-size: 28px;
+  font-weight: bold;
+  color: teal;
+  margin-bottom: 10px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.destination-card-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-top: 2rem;
+
+}
+
+.destination-card {
+    padding: 10px 8px;
+  box-shadow: 0 4px 8px 0 rgb(2, 39, 39);
+  transform: 0.3s;
+  border-radius: 5px;
+  width: 100%;
+  height: 200%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.destination-card img {
+ width: 100%;
+ height: 200%;
+}
+
+.card-content {
+    width: 300px;
+    padding: 2px 16px;
+}
+
+.destination-title {
+  color: rgb(5, 148, 148);
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.destination-brief {
+  font-size: 15px;
+  display: flex;
+  font-family: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto&display=swap');
+}
+
+
+
+
+
+
+
+
