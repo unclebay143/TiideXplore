@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+/* - Color scheme
+- Murky Teal – #022831
+- Blue Lagoon – #04566E (primary)
+- Pastel Green – #689368
+- Green Pear – #B4D330
+- Blustery Blue – #D8DFE9 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-display: "poppins", sans-serif; 
+}
+
+.testimonials {
+    padding: 20px 0;
+    background: #D8DFE9;
+    color: #434343;
+    text-align: center;
+    justify-content: center;
+}
+
+.inner {
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0, 10px;
+}
+
+.guest {
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+.row-container {
+    position: relative;
+    width: 1500px;
+    min-width: 350px;
+    min-height: 250px;
+    padding-bottom: 40px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.colwrapper {
+    width: 1300px;
+    padding: 0 40px;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    gap: 10px;
+    box-sizing: content-box;
+}
+
+.testimonial-card {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    min-height: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 #04566E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 0 10px;
+}
+
+.content-image {
+    padding: 5px;
+}
+
+.review-image {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    margin-top: auto;
+}
+
+.name-body {
+    width: 120%;
+    min-height: 100%;
+    height: auto;
+    margin-left: 15px;
+    position: relative;
+    padding-top: 25px;
+}
+
+.names {
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "poppins" sans-serif;
+    padding-bottom: 5px;
+}
+
+.ratings{
+    position: relative;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+
+}
+
+.star {
+    width: 25px;
+    color: #04566E;
+}
+
+.review-text {
+    font-size: 15px;
+    font-style: italic;
+    line-height: 21px;
+    padding: 5px 0;
+}
+
+.buttonindicators {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /*transform: translateX(50%);*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.buttonindicators button {
+    background: none;
+    outline: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #04566E;
+    cursor: pointer;
+    transition: .5s;       
+}   
+
+button.active-button {
+    width: 40px;
+    border-radius: 50px;
+    background: #fff;
+}
+
+
+
+@media (max-width: 1000px) {
+    .row-container {
+        width: 50%;
+        margin: auto;
+    }
+    .testimonial-card {
+        flex-direction: column;
+    }
+
+    .content-image {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .name-body {
+        width: 100%;
+        min-height: auto;
+        margin-left: 0;
+    }
+}
+
+/* .best-directory span {
+    padding: 10px 0;
+}
+
+.best-directory h2 {
+    padding: 10px 0;
+}
+
+.best-directory p {
+    text-align: left;
+    padding: 10px 0;
+    max-width: 250px;
+}
+
+.btn {
+    background-color: #D8DFE9;
+    color: #04566E;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 13px 18px;
+    border-radius: 26px;
+    border: 1px solid #04566E;
+    margin: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.5s;
+} 
+
+.btn:hover {
+    background-color: #04566E;
+    color: #fff;
+
+    transition: 0.5s;
+}*/
+
+
+/* .col {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    max-width: 55%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.testimonial {
+    background: #fff;
+    box-shadow: 0 4px 8px 0 #04566E;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    height: 300px;
+}
+
+.testimonial:hover {
+    box-shadow: 0 8px 16px 0 rgba(29.8, 71.76, 64.71, 0.4);
+    background-color: #fff
+}
+
+
+.name{
+    padding: 0 10px;
+}
+
+.name h3{
+    padding: 5px 0;
+}
+.name p {
+    text-align: left;
+    padding-left: 33px;
+}
+
+
+.name .star {
+    color: #04566E;
+    margin-bottom: 10px;
+} */
+
+.review-btn {
+    background-color: #D8DFE9;
+    color: #04566E;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 13px 18px;
+    border-radius: 26px;
+    border: 1px solid #04566E;
+    margin: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.5s;
+} 
+
+.review-btn:hover {
+    background-color: #04566E;
+    color: #fff;
+
+    transition: 0.5s;
+}
+
+/* @media screen and (max-width:960px) {
+    .col {
+        flex: 100%
+        max-width: 80%;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .col {
+        flex: 100%
+        max-width: 100%;
+    }
+} */
