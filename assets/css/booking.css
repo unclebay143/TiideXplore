@@ -59,336 +59,11 @@ section {
 }
 
 header {
-<<<<<<< HEAD:css/style.css
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-=======
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background-color: #04566e;
->>>>>>> 53521a4496d8b38023be1855d33edb1a355c6e26:assets/css/booking.css
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 9%;
-<<<<<<< HEAD:css/style.css
-=======
-  height: 10vh;
->>>>>>> 53521a4496d8b38023be1855d33edb1a355c6e26:assets/css/booking.css
-}
-
-header .logo {
-  font-size: 2.5rem;
-  font-weight: bolder;
-  color: #fff;
-  text-transform: none;
-}
-
-header .logo span {
-  font-size: 2.8rem;
-  color: #b4d330;
-}
-
-header .navbar a {
-  color: #fff;
-  font-size: 2rem;
-  margin: 0 0.8rem;
-}
-
-header .navbar a:hover {
-  color: #022831;
-}
-
-header .icons i {
-  font-size: 2.5rem;
-  color: #fff;
-  cursor: pointer;
-  margin-right: 2rem;
-}
-
-header .icons i:hover {
-  color: #022831;
-}
-
-#menu-bar {
-  color: #fff;
-  border: 0.1rem solid #fff;
-  border-radius: 0.5rem;
-  font-size: 3rem;
-  padding: 0.5rem 1.2rem;
-  cursor: pointer;
-  display: none;
-}
-
-.home {
-<<<<<<< HEAD:css/style.css
-  background-image: url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
-  background-size: cover;
-  background-position: 100%;
-  height: 100vh;
-=======
-  background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
-    url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
-  background-size: cover;
-  background-position: 100%;
-  height: 120vh;
->>>>>>> 53521a4496d8b38023be1855d33edb1a355c6e26:assets/css/booking.css
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  position: relative;
-  z-index: 0;
-}
-
-.home .content {
-  margin-left: 10px;
-}
-
-.home .content h2 {
-  font-size: 55px;
-  font-weight: bold;
-  text-align: left;
-  color: #fff;
-  text-transform: none;
-  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
-}
-
-.home .content h3 {
-  font-size: 48px;
-  font-weight: normal;
-  text-align: left;
-  color: #fff;
-  text-transform: none;
-  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
-}
-
-.home .content p {
-  font-size: 24px;
-  color: #fff;
-  padding: 0.5rem 0;
-  text-align: left;
-}
-
-.home .discover {
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-<<<<<<< HEAD:css/style.css
-  font-size: 20px;
-  background-color: #04566e;
-  width: 14%;
-  padding: 10px 10px;
-  border-radius: 10px;
-  text-align: center;
-  margin-top: 70px;
-  font-weight: bold;
-=======
-  font-size: 26px;
-  background-color: #04566e;
-  width: 20%;
-  border-radius: 10px;
-  text-align: center;
-  margin-top: 70px;
->>>>>>> 53521a4496d8b38023be1855d33edb1a355c6e26:assets/css/booking.css
-}
-
-.home .discover:hover {
-  background-color: #022831;
-}
-
-.home .discover span {
-  color: #fff;
-}
-
-<<<<<<< HEAD:css/style.css
-/* FOOTER SECTION */
-.footer {
-  background-color: #04566e;
-}
-
-.footer .box-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.footer .box-container .box {
-  padding: 1rem 0;
-  flex: 1 1 25rem;
-}
-
-.footer .box-container .box h3 {
-  font-size: 2.5rem;
-  padding: 0.7rem 0;
-  color: #fff;
-}
-
-.footer .box-container .box p {
-  font-size: 1.5rem;
-  padding: 0.7rem 0;
-  color: #eee;
-}
-
-.footer .box-container .box a {
-  display: block;
-  font-size: 1.5rem;
-  padding: 0.7rem 0;
-  color: #eee;
-}
-
-.footer .box-container .box a:hover {
-  color: #d8dfe9;
-  text-decoration: underline;
-}
-
-.footer .credit {
-  text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 1rem;
-  font-size: 2rem;
-  font-weight: normal;
-  color: #fff;
-  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
-}
-
-.footer .credit span {
-  color: #b4d330;
-}
-
-/* MAKING THE PAGE RESPONSIVE */
-
-/* media queries  */
-
-@media (max-width: 1200px) {
-  html {
-    font-size: 55%;
-  }
-}
-
-@media (max-width: 991px) {
-  header {
-    padding: 2rem;
-  }
-
-  section {
-    padding: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #menu-bar {
-    display: initial;
-  }
-
-  header .navbar {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    background-color: #04566e;
-    width: 30%;
-    border-top: 0.1rem solid #022831;
-    padding: 1rem 2rem;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-
-  header .navbar.active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-
-  header .navbar a {
-    display: block;
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-    background-color: #04566e;
-  }
-}
-
-@media (max-width: 450px) {
-  html {
-    font-size: 50%;
-  }
-
-  .heading span {
-    font-size: 2.5rem;
-  }
-
-  .contact .row form .inputBox input {
-    width: 100%;
-  }
-}
-=======
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-
-* {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-transform: capitalize;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  transition: all 0.2s linear;
-}
-
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-  scroll-padding-top: 6rem;
-  scroll-behavior: smooth;
-}
-
-section {
-  padding: 2rem 9%;
-}
-
-.heading {
-  text-align: center;
-  padding: 2.5rem 0;
-}
-
-.heading span {
-  font-size: 3.5rem;
-  background: #022831;
-  color: #022831;
-  border-radius: 0.5rem;
-  padding: 0.2rem 1rem;
-}
-
-.heading span.space {
-  background: none;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 1rem;
-  background: var(--blue);
-  color: #fff;
-  padding: 0.8rem 3rem;
-  border: 0.2rem solid var(--blue);
-  cursor: pointer;
-  font-size: 1.7rem;
-  border-radius: 24px;
-}
-
-.btn:hover {
-  background: #022831;
-  color: #022831;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  /* background-color: #04566e; */
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -439,7 +114,7 @@ header .icons i:hover {
   display: none;
 }
 
-.home {
+/*.home {
   background-image: url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
   background-size: cover;
   background-position: 100%;
@@ -449,7 +124,7 @@ header .icons i:hover {
   flex-flow: column;
   position: relative;
   z-index: 0;
-}
+}*/
 
 .home .content {
   margin-left: 10px;
@@ -496,8 +171,6 @@ header .icons i:hover {
   background-color: #022831;
 }
 
-.home .discover span {
-=======
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
@@ -512,6 +185,10 @@ body{
   background-repeat: repeat;
 }
 /*The booking page style */
+form{
+  margin: 10px;
+  padding: 10px;
+}
 .booking-form-container{
   width: 500px;
   display: flex;
@@ -522,12 +199,15 @@ body{
   padding: 0 20px 20px 20px;
   border: 1px solid #fff;
   border-radius: 5px;
-  margin-bottom: 200px;
+  position: relative;
+  top: 100px;
 }
 .booking-form-container h2{
   font-size: 24px;
   text-align: center;
   color: #fff;
+  padding: 15px 10px;
+  margin-top: 10px;
 }
 .input-container{
   display: flex;
@@ -561,11 +241,7 @@ body{
   background-color: #689368;
 }
 
-.date-container{
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
+
 
 /* The payment page style */
 .payment-container{
@@ -578,8 +254,8 @@ body{
   flex-direction: column;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.2);
-  margin-bottom: 400px;
-  margin-top: 200px;
+  position: relative;
+  top: 100px;
 }
 .payment-header h2{
   font-size: 24px;
@@ -604,6 +280,7 @@ body{
 .payment-content{
   margin: 10px;
 }
+
 .input-section{
   width: 100%;
   padding: 10px 0;
@@ -622,23 +299,20 @@ label{
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 10px;
->>>>>>> 53521a4496d8b38023be1855d33edb1a355c6e26:assets/css/booking.css
   color: #fff;
 }
 
 /* FOOTER SECTION */
 .footer {
   background-color: #04566e;
+  margin-top: 100px;
 }
 
 .footer .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-<<<<<<< HEAD:css/style.css
-=======
   
->>>>>>> 53521a4496d8b38023be1855d33edb1a355c6e26:assets/css/booking.css
 }
 
 .footer .box-container .box {
@@ -746,8 +420,4 @@ label{
   .contact .row form .inputBox input {
     width: 100%;
   }
-<<<<<<< HEAD:css/style.css
 }
-=======
-}
->>>>>>> 53521a4496d8b38023be1855d33edb1a355c6e26:assets/css/booking.css
