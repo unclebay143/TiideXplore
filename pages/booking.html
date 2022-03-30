@@ -33,8 +33,6 @@
         </div>
 
     </header>
-    <!--HOME SECTION-->
-    <section class="home" id="home">
 
         <!--BOOKING CARD-->
         <section class="section booking-form-container">
@@ -42,17 +40,17 @@
             <form action="">
                 <div class="input-container">
                     <i class="fa fa-map-marker icon" aria-hidden="true"></i>
-                    <input type="text" class="input_text" placeholder="Enter your desired location">
+                    <input type="text" class="input_text" placeholder="Enter your desired location"  required>
                 </div>
 
                 <div class="input-container">
                     <i class="fa fa-calendar-check-o icon" aria-hidden="true"></i>
-                    <input type="date" class="input_text focus">
+                    <input type="date" class="input_text focus" required>
                 </div>
 
                 <div class="input-container">
                     <i class="fa fa-calendar-times-o icon" aria-hidden="true"></i>
-                    <input type="date" class="input_text focus" placeholder="">
+                    <input type="date" class="input_text focus" placeholder="" required>
                 </div>
 
 
@@ -60,21 +58,17 @@
                 <div class="input-container">
 
                     <i class="fa fa-users icon" aria-hidden="true"></i>
-                    <select name="guest" id="guest" class="input_text select">
+                    <select name="guest" id="guest" class="input_text select" required>
                         <option value="" disabled selected hidden>Select number of guest</option>
                         <option value="1">Less than 5</option>
                         <option value="2">Greater than 5, Less than 20</option>
                         <option value="3">Greater than 20, Less than 100</option>
                         <option value="4">Greater than 100</option>
-                        op
-                        optio
                     </select>
                 </div>
                 <button class="btn">Reserve</button>
             </form>
         </section>
-
-    </section>
 
 
 

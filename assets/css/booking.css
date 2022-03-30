@@ -181,7 +181,6 @@ body{
   background: linear-gradient(30deg, rgba(0,0,0, 0.3), rgba(0,0,0,0.4)),
               url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
   background-size: cover;
-  height: 100vh;
   background-repeat: repeat;
 }
 /*The booking page style */
@@ -190,7 +189,7 @@ form{
   padding: 10px;
 }
 .booking-form-container{
-  width: 500px;
+  width: 400px;
   display: flex;
   margin: auto;
   flex-direction: column;
@@ -201,6 +200,8 @@ form{
   border-radius: 5px;
   position: relative;
   top: 100px;
+  margin-bottom: 200px;
+
 }
 .booking-form-container h2{
   font-size: 24px;
@@ -245,7 +246,8 @@ form{
 
 /* The payment page style */
 .payment-container{
-  width: 500px;
+  width: 400px;
+  height: 100vh;
   margin: auto;
   padding: 10px 20px;
   border: 1px solid #fff;
@@ -256,6 +258,7 @@ form{
   background-color: rgba(0, 0, 0, 0.2);
   position: relative;
   top: 100px;
+  margin-bottom: 100px;
 }
 .payment-header h2{
   font-size: 24px;
@@ -305,7 +308,6 @@ label{
 /* FOOTER SECTION */
 .footer {
   background-color: #04566e;
-  margin-top: 100px;
 }
 
 .footer .box-container {

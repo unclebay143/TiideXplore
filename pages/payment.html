@@ -49,7 +49,7 @@
         </div>
         
             <div class="payment-content select">
-                <select name="" id="" class="input-section credit" placeholder="Credit card">
+                <select name="" id="" class="input-section credit" placeholder="Credit card" required>
                     <option value="" disabled selected hidden>Select a Payment Option</option>
                     <option value="">Credit or debit Card</option>
                     <option value="">Paypal</option>
@@ -60,23 +60,23 @@
             <div class="payment-content card-details">
                 <label for="">Card Details</label><br><br>
 
-                <input type="tel"  maxlength="19" placeholder="xxxx xxxx xxxx xxxx" class="input-section">
+                <input type="tel"  maxlength="19" placeholder="xxxx xxxx xxxx xxxx" class="input-section" required>
                 <div class="card-brief">
-                    <input type="text" placeholder="expiration" class="input-section">
-                    <input type="text" placeholder="CVV" class="input-section">
+                    <input type="text" placeholder="expiration" class="input-section"required>
+                    <input type="text" placeholder="CVV" class="input-section"required>
                 </div>
                
             </div>
             <div class="payment-content billing-address">
                 <label for="">Billing Address</label><br><br>
-                <input type="text" placeholder="Street Address" class="input-section">
-                <input type="text" placeholder="Nearest Bustop" class="input-section">
-                <input type="text" placeholder="City" class="input-section">
+                <input type="text" placeholder="Street Address" class="input-section" required>
+                <input type="text" placeholder="Nearest Bustop" class="input-section" required>
+                <input type="text" placeholder="City" class="input-section" required>
                 <div class="card-brief">
-                    <input type="text" placeholder="State" class="input-section">
-                    <input type="text" placeholder="Zip Code" class="input-section">
+                    <input type="text" placeholder="State" class="input-section" required>
+                    <input type="text" placeholder="Zip Code" class="input-section" required>
                 </div>
-                <input type="text" placeholder="Country" class="input-section">
+                <input type="text" placeholder="Country" class="input-section" required>
             </div>
             
             <div class="payment-content">
