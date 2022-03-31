@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto&display=swap");
+
+/*HEADER SECTION*/
+
+header{
+  background-image: url(https://media.istockphoto.com/photos/cityscape-and-skyline-of-lagos-island-ikoyi-and-victoria-island-picture-id1309040347?b=1&k=20&m=1309040347&s=170667a&w=0&h=Zx6UVrnyeM_kRd6FZZOGJtqMam0EENqE0KEopNPZN6M=);
+background-size: cover;
+background-position: 50%;
+height: 70vh;
+position: relative;
+padding-bottom: 2rem;
+margin-bottom: 2rem;
+}
+
+
+.header-content-wrapper{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+
+.fullname{
+  font-size: 30px;
+  color: rgb(97, 245, 176);
+  font-weight: bold;
+}
+
+
+/*.nav-link*/
+.nav-link{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none; /* remove underline */
+  transition: 0.5s;
+  padding: 10px;
+  margin: 8px;
+}
+
+
+.nav-link.active{
+  color: teal;
+}
+
+.hero-wrapper{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+
+.brief{
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+  transition: 0.5;
+}
+
+header .logo {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #fff;
+  text-transform: none;
+}
+
+header .logo span {
+  font-size: 30px;
+  color: #b4d330;
+}
+
+
+/* PACKAGE CARDS */
+
+/* .section h2{
+  font-size: 28px;
+  font-weight: bold;
+  color: teal;
+  margin-bottom: 10px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.destination-card-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-top: 2rem;
+
+}
+
+.destination-card {
+    padding: 10px 8px;
+  box-shadow: 0 4px 8px 0 rgb(2, 39, 39);
+  transform: 0.3s;
+  border-radius: 5px;
+  width: 100%;
+  height: 200%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.destination-card img {
+ width: 100%;
+ height: 200%;
+}
+
+.card-content {
+    width: 300px;
+    padding: 2px 16px;
+}
+
+.destination-title {
+  color: rgb(5, 148, 148);
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.destination-brief {
+  font-size: 15px;
+  display: flex;
+  font-family: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto&display=swap');
+} */
+
+
+.getaway{
+ text-align: center; 
+ padding-top: 2rem;
+}
+
+.honeymoon{
+  text-align: center; 
+ padding-top: 2rem;
+}
+
+.destination {
+  margin-top: 50px;
+  border-top: 3px solid var(--secondary);
+  border-bottom: 3px solid var(--secondary);
+  border-radius: 50px;
+  /* height: 500px;    */
+  padding: 20px;
+}
+
+.destination-card-wrapper {
+  max-width: 1300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4rem;
+  /* gap: 30px; */
+}
+.destination-card {
+  width: 30%;
+}
+.destination-card h3 {
+  font-size: 20px;
+  padding: 5px 0;
+}
+.destination-card img {
+  width: 80%;
+  height: 200px;
+}
+.destination-card img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.destination-card p {
+  font-size: 16px;
+  width: 80%;
+}
+
+#more {display: none;}
+
+
+
