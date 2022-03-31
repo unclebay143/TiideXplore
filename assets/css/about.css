@@ -55,7 +55,6 @@ header section {
 .heading span.space {
   background: none;
 }
-
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -128,6 +127,12 @@ header .icons i:hover {
   cursor: pointer;
   display: none;
 }
+.active{
+  font-weight: 800;
+  text-decoration: underline;
+  background-color: ;
+}
+
 
 /* HOME SECTION */
 
@@ -135,13 +140,55 @@ header .icons i:hover {
     /* margin-top: 100px; */
     width: 100%;
     height: 600px;
-    /* background-image: url(bridge.jpg);
+    background-image: url(./../img/aboutimg1);
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
-    background-attachment: fixed;
-    z-index:999; */
+    background-attachment: scroll;
+    /* z-index:999; */
+    position: relative;
+    display: grid;
+    place-content: center;
 }
+.home .content {
+  margin-left: 10px;
+  /* position: absolute; */
+  top: 0;
+  /* width: 700px; */
+  margin: 50px auto;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.home .content h2 {
+  font-size: 64px;
+  font-weight: bold;
+  text-align: left;
+  color: var(--primary);
+  text-transform: none;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.home .content h3 {
+  font-size: 54px;
+  font-weight: normal;
+  text-align: left;
+  color: var(--primary);
+  margin-top: 10px;
+  text-transform: none;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.home .content p {
+  font-size: 30px;
+  color: var(--primary);
+  padding: 0.5rem 0;
+  text-align: left;
+  margin-top: 10px;
+}
+
 .home img{
     object-fit: cover;
     width: 100%;
