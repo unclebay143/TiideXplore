@@ -244,21 +244,26 @@ header .icons i:hover {
 .place-card-wrapper {
   max-width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 50px;
   margin: 0 auto;
   flex-wrap: wrap;
-  margin-bottom: 80px;
+  /* margin-bottom: 20px; */
   height: auto;
 }
 
 
 .place-card {
   width: 47%;
-  height: 300px;
-  margin-bottom: 70px;
+  height: auto;
+  padding: 0 3%;
+  /* background-color: red; */
+  margin-bottom: 30px;
+}
+.place-card h6{
+  margin:3px 0 ;
 }
 .btns {
   padding: 10px 20px;
@@ -275,7 +280,7 @@ header .icons i:hover {
 }
 .place-card img {
   object-fit: fill;
-  width: 90%;
+  width: 100%;
   height: 300px;
 }
 .place-card img:hover {
@@ -288,6 +293,9 @@ header .icons i:hover {
 }
 
 /* Apartment */
+.apartment{
+  margin-bottom: 30px;
+}
 .apartment-wrapper {
   display: flex;
   width: 100%;
@@ -299,6 +307,9 @@ header .icons i:hover {
 .apartment-card {
   width: 400px;
   cursor: pointer;
+}
+.apartment-card h5{
+  margin: 5px 0;
 }
 .apartment-card img:hover {
   opacity: 0.7;
@@ -355,6 +366,7 @@ header .icons i:hover {
 }
 .rest-card h3 {
   color: white;
+  margin: 3px 0;
 }
 .rest-card h6 {
   font-size: 75%;
@@ -457,7 +469,7 @@ header .icons i:hover {
 .car-card h5 {
   font-size: 120%;
   /* height: 15px; */
-  padding-top: 2px;
+  margin: 3px 0;
 }
 .car img {
   width: 250px;
