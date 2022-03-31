@@ -239,6 +239,8 @@ header .icons i:hover {
   height: 150px;
 }
 /* Hotel */
+
+
 .place-card-wrapper {
   max-width: 100%;
   display: flex;
@@ -251,6 +253,8 @@ header .icons i:hover {
   margin-bottom: 80px;
   height: auto;
 }
+
+
 .place-card {
   width: 47%;
   height: 300px;
@@ -373,9 +377,9 @@ header .icons i:hover {
 /* Taxis*/
 .taxis {
   margin-top: 50px;
-  border-top: 3px solid var(--secondary);
+  /* border-top: 3px solid var(--secondary);
   border-bottom: 3px solid var(--secondary);
-  border-radius: 50px;
+  border-radius: 50px; */
   /* height: 500px;    */
   padding: 20px;
 }
