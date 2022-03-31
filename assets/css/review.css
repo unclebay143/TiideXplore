@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-
-
 /* - Color scheme
 - Murky Teal – #022831
 - Blue Lagoon – #04566E (primary)
@@ -145,7 +142,6 @@ header {
     display: none;
   }
   
-
 /* testimonial section */
 .testimonials {
     padding: 20px 0;
@@ -359,7 +355,6 @@ button.active-button {
     .content-image {
         width: 100%;
         border-radius: 10px;
-        padding top: 20px;
     }
     .name-body {
         width: 100%;
