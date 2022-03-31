@@ -78,7 +78,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  /* background-color: #04566e;  */
+  background-color: #04566e;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -149,7 +149,6 @@ header .icons i:hover {
 }
 .about{
     /* margin-top: 80px; */
-    font-weight: ;
     font-size: 150%;
     max-width: 400px;
     margin: 80px auto;
@@ -287,6 +286,15 @@ header .icons i:hover {
   
   .footer .credit span {
     color: #b4d330;
+  }
+
+  .about-description{
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .about-heading{
+    font-size: 25px;
   }
 @media only screen and (max-width: 900px) {
     .about{
