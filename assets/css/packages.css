@@ -1,12 +1,79 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto&display=swap");
 
 
-/* PACKAGE CARDS */
+header{
+  background-image: url(https://media.istockphoto.com/photos/african-city-by-night-lagos-nigeria-picture-id900714738?b=1&k=20&m=900714738&s=170667a&w=0&h=b3qohgMDS8cdHp77mjad5FEqiSL74BhT1uUviXUodTs=);
+background-size: cover;
+background-position: 50%;
+height: 70vh;
+position: relative;
+padding-bottom: 2rem;
+margin-bottom: 2rem;
+}
+
+
+.header-content-wrapper{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+
+.fullname{
+  font-size: 30px;
+  color: limegreen;
+  font-weight: bold;
+  margin-top: 8rem;
+}
+
+
+
+
+/*.nav-link1*/
+.nav-link1{
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none; /* remove underline */
+  transition: 0.5s;
+  padding: 10px;
+  margin: 8px;
+}
+
+
+.nav-link1.active{
+  color: limegreen;
+}
+
+.hero-wrapper{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+
+header .logo {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #fff;
+  text-transform: none;
+}
+
+header .logo span {
+  font-size: 30px;
+  color: #b4d330;
+}
+
 
 .section h2{
-  font-size: 28px;
+  font-size: 25px;
   font-weight: bold;
-  color: teal;
+  color: black;
   margin-bottom: 10px 0;
   text-transform: uppercase;
   text-align: center;
@@ -21,8 +88,7 @@
 
 .packages-card {
   padding: 10px 6px;
-  box-shadow: 0 4px 8px 0;
-  transform: 0.3s;
+   transform: 0.3s;
   border-radius: 5px;
   width: 100%;
   height: 200%;
@@ -39,7 +105,7 @@
 }
 
 .package-tittle {
-  color: rgb(5, 148, 148);
+  color: black;
   margin-bottom: 10px;
   font-size: 17px;
 }
@@ -61,8 +127,8 @@
 
 
 .btn{
-  background-color: teal;
-  color: rgb(80, 240, 80);
+  background-color: rgb(180, 206, 206);
+  color: black;
   font-size: 12px;
   font-weight: bold;
   text-decoration: none;
@@ -79,8 +145,3 @@
 .btn:hover{
   opacity: 0.5;
 }
-
-
-
-
-
