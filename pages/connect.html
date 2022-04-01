@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connect</title>
+    <title>Connect | TiideXplore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <link rel="stylesheet" href="../assets/css/connect.css">
 </head>
 
@@ -14,18 +17,18 @@
     <a href="#" class="logo">Tiide<span>X</span>plore</a>
 
     <nav class="navbar">
-        <a href="./index.html">Home</a>
-        <a href="./pages/booking.html">Book</a>
-        <a href="./pages/booking.html">Packages</a>
+        <a href="./../index.html">Home</a>
+        <a href="./booking.html">Book</a>
+        <a href="./booking.html">Packages</a>
         <a href="./pages/">Services</a>
-        <a href="./pages/connect.html">Connect</a>
-        <a href="./pages/review.html">Review</a>
-        <a href="./pages/contact.html">Contact</a>
+        <a href="./connect.html">Connect</a>
+        <a href="./review.html">Review</a>
+        <a href="./contact.html">Contact</a>
     </nav>
 
     <div class="icons">
         <i class="fas fa-search" id="search-btn"></i>
-        <i class="fas fa-user" id="login-btn"></i>
+        <a href="./Sign-In.html"><i class="fas fa-user" id="login-btn"></i></a>
     </div>
 
 </header>
@@ -38,20 +41,18 @@
         <div class="card__container">
             <div class="card__connect">
                 <img class="connect__image" src="../assets/img/uncle_bigbay.jpg" alt="">
-                <p class="name" >Unclebigbay</p>
+                <p class="name">Unclebigbay</p>
                 <small>Traveller going to Lekki Conservation Centre</small>
                 <div class="button">
-                    <button onclick="openPopUp()">
-                        <a href="#">Connect</a>
-                    </button>
-            </div>
-            
+                    <button onclick="openPopUp()">Connect</button>
+                </div>
+
             </div>
             <div class="card__connect">
                 <img class="connect__image" src="../assets/img/Herbalist 2.jpg" alt="">
-                <p class="name" >Herbalist</p>
+                <p class="name">Herbalist</p>
                 <small>Traveller going to Nike Centre for Art and Culture</small>
-            
+
                 <div class="button">
                     <button onclick="openPopUp()">
                         <a href="#">Connect</a>
@@ -60,20 +61,21 @@
             </div>
             <div class="card__connect">
                 <img class="connect__image" src="../assets/img/Gbenga.jpg" alt="">
-                <p class="name" >Gbenga</p>
+                <p class="name">Gbenga</p>
                 <small>Traveller going Tarkwa Bay Beach</small>
                 <div class="button">
                     <button onclick="openPopUp()">
                         <a href="#">Connect</a>
                     </button>
-            </div>
+                </div>
             </div>
         </div>
+        <div class="see_more_travellers">
+            <button class="see_more_btn">See more travellers</button>
+        </div>
     </div>
-    <div class="see_more_travellers">
-        <button class="see_more_btn">See more travellers</button>
-    </div>
-<!--POPUP CARD-->
+
+    <!--POPUP CARD-->
     <div class="connect-card" id="connect-card">
         <div class="connect-header">
             <h2>Connected</h2>
@@ -89,18 +91,60 @@
         </div>
         <button onclick="closePopUp()" class="connect-btn" id="connect-btn">OK</button>
     </div>
-    
+
+    <!--FOOTER SECTION-->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>about us</h3>
+                <p>TiideXplore offers you the best travel/tourist experience here in Lagos, Nigeria. When was the last
+                    time you did something for the first time? Explore with us!</p>
+            </div>
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="#">Lekki</a>
+                <a href="#">Ikeja</a>
+                <a href="#">Victoria Island</a>
+                <a href="#">Ajah</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">book</a>
+                <a href="#">packages</a>
+                <a href="#">services</a>
+                <a href="#">gallery</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+            <div class="box">
+                <h3>follow us on</h3>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">twitter</a>
+                <a href="#">linkedin</a>
+            </div>
+
+        </div>
+
+        <h1 class="credit"> Copyright @ <span> TiideXplore </span> 2022 | all rights reserved! </h1>
+
+    </section>
+
 
     <script>
         let popup = document.getElementById('connect-card');
 
-function openPopUp() {
-    popup.classList.add('open-pop');   
-}
+        function openPopUp() {
+            popup.classList.add('open-pop');
+        }
 
-function closePopUp() {
-    popup.classList.remove('open-pop');   
-}
+        function closePopUp() {
+            popup.classList.remove('open-pop');
+        }
     </script>
 </body>
+
 </html>

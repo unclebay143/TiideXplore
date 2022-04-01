@@ -1,18 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+.container__wrapper{
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+  margin-bottom: 100px;
+}
+
 .connect_heading {
     font-family: poppins;
     font-size: 28px;
     font-weight: bold;
     color: teal;
-    margin-bottom: 10px 0;
+    margin-bottom: 10px;
     text-transform: uppercase;
     text-align: center;
 }
-.connect__header h1 {
+/* .connect__header h1 {
     text-align: center;
     font-family: poppins;
-}
+} */
 .card__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -24,11 +35,16 @@
     align-content: center;
     height: 100%;
     box-shadow: 0 4px 8px 0 #04566e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
     
 }
 .connect__image {
     width: 30%;
-    margin-left: 35%;
+    /* margin-left: 35%; */
     border-radius: 50%;
     border: 2px solid #04566e;
     margin-top: 1.5rem;
@@ -49,17 +65,17 @@
     letter-spacing: 1px;
     cursor: pointer;
     transition: 0.5s;
-    margin-left: 37%;
+    /* margin-left: 37%; */
 }
 .button button:hover {
     background: #04566E;
     color: white;
     font-style: none;
 }
-.button a {
+/* .button a {
     text-decoration: none;
     color: #04566E;
-}
+} */
 .button a:hover {
     color: white;
     background-color: #04566e;
@@ -68,20 +84,20 @@
 .name {
     font-weight: bold;
     font-family: poppins;
-    line-height: 3px;
+    /* line-height: 3px; */
     margin-top: 8px;
+    font-size: 14px;
 }
-.container__wrapper {
+/* .container__wrapper {
    margin: 35px;
-}
+} */
 small {
     display: flex;
     justify-content: center;
     color: black;
     text-align: center;
-    font-size: medium;
+    font-size: 12px;
     font-family: poppins;
-    line-height: 3px;
 }
 
 .see_more_btn {
@@ -183,9 +199,9 @@ small {
   }
   
 
-  import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
-* {
+ * {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
@@ -196,13 +212,12 @@ small {
   text-decoration: none;
   transition: all 0.2s linear;
 }
-:root {
-  /* colors */
-
+/* :root {
+   colors 
   --primary: #04556e;
   --secondary: #022831;
   -tertiary: #689368;
-}
+} */
 
 html {
   font-size: 62.5%;
@@ -211,7 +226,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Poppins', sans-serif;
   color: var(--secondary);
   transition: all 0.5s ease-in-out;
 }
@@ -312,4 +327,94 @@ header .icons i:hover {
   padding: 0.5rem 1.2rem;
   cursor: pointer;
   display: none;
+}
+
+/*FOOTER STYLE*/
+
+.footer {
+  background-color: #04566e;
+  padding: 2rem 9%;
+}
+
+.footer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer .box-container .box {
+  padding: 1rem 0;
+  flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  padding: 0.7rem 0;
+  color: #fff;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  padding: 0.7rem 0;
+  color: #eee;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.7rem 0;
+  color: #eee;
+}
+
+.footer .box-container .box a:hover {
+  color: #d8dfe9;
+  text-decoration: underline;
+}
+
+.footer .credit {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fff;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+}
+
+.footer .credit span {
+  color: #b4d330;
+}
+
+/* MAKING THE PAGE RESPONSIVE */
+
+/* media queries  */
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+  .place-card-wrapper {
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 45% 45%;
+  }
+  .place-card {
+    width: 100%;
+  }
+  .section {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 2rem;
+  }
+
+  .home {
+    padding: 2rem;
+  }
+  .footer {
+    padding: 2rem;
+  }
 }
