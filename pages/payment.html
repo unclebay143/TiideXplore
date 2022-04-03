@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TiideXplore | Payment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./../assets/css/booking.css">
     <script src="https://use.fontawesome.com/74fd32194c.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -35,13 +36,6 @@
 <!-- HOME SECTION  -->
 
 <section class="home" id="home">
-    <div class="content">
-        <h2>Explore</h2>
-        <h3>your amazing city, Lagos</h3>
-        <p>find great places to visit and tour the beautiful sites</p>
-    </div>
-
-    <button class="discover"><a href="#"><span>GET STARTED...</span></a></button>
 
     <!--PAYMENT SECTION-->
     <section class="section payment-container">
@@ -56,7 +50,7 @@
         </div>
         
             <div class="payment-content select">
-                <select name="" id="" class="input-section credit" placeholder="Credit card">
+                <select name="" id="" class="input-section credit" placeholder="Credit card" required>
                     <option value="" disabled selected hidden>Select a Payment Option</option>
                     <option value="">Credit or debit Card</option>
                     <option value="">Paypal</option>
@@ -65,24 +59,25 @@
             
             </div>
             <div class="payment-content card-details">
-                <label for="">Card Details</label>
-                <input type="tel"  maxlength="19" placeholder="xxxx xxxx xxxx xxxx" class="input-section">
+                <label for="">Card Details</label><br><br>
+
+                <input type="tel"  maxlength="19" placeholder="xxxx xxxx xxxx xxxx" class="input-section" required>
                 <div class="card-brief">
-                    <input type="text" placeholder="expiration" class="input-section">
-                    <input type="text" placeholder="CVV" class="input-section">
+                    <input type="text" placeholder="expiration" class="input-section"required>
+                    <input type="text" placeholder="CVV" class="input-section"required>
                 </div>
                
             </div>
             <div class="payment-content billing-address">
-                <label for="">Billing Address</label>
-                <input type="text" placeholder="Street Address" class="input-section">
-                <input type="text" placeholder="Nearest Bustop" class="input-section">
-                <input type="text" placeholder="City" class="input-section">
+                <label for="">Billing Address</label><br><br>
+                <input type="text" placeholder="Street Address" class="input-section" required>
+                <input type="text" placeholder="Nearest Bustop" class="input-section" required>
+                <input type="text" placeholder="City" class="input-section" required>
                 <div class="card-brief">
-                    <input type="text" placeholder="State" class="input-section">
-                    <input type="text" placeholder="Zip Code" class="input-section">
+                    <input type="text" placeholder="State" class="input-section" required>
+                    <input type="text" placeholder="Zip Code" class="input-section" required>
                 </div>
-                <input type="text" placeholder="Country" class="input-section">
+                <input type="text" placeholder="Country" class="input-section" required>
             </div>
             
             <div class="payment-content">

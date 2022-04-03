@@ -1,12 +1,6 @@
-<<<<<<< HEAD:css/style.css
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
-=======
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-
-
->>>>>>> 53521a4496d8b38023be1855d33edb1a355c6e26:assets/css/booking.css
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -65,7 +59,7 @@ section {
 }
 
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -132,185 +126,80 @@ header .icons i:hover {
   z-index: 0;
 }*/
 
-.home .content {
-  margin-left: 10px;
-}
 
-.home .content h2 {
-  font-size: 55px;
-  font-weight: bold;
-  text-align: left;
-  color: #fff;
-  text-transform: none;
-  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
-}
+/* form{
+  background: white;
+  padding: 1rem;
+} */
 
-.home .content h3 {
-  font-size: 48px;
-  font-weight: normal;
-  text-align: left;
-  color: #fff;
-  text-transform: none;
-  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
-}
-
-.home .content p {
-  font-size: 24px;
-  color: #fff;
-  padding: 0.5rem 0;
-  text-align: left;
-}
-
-.home .discover {
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 26px;
-  background-color: #04566e;
-  width: 20%;
-  border-radius: 10px;
-  text-align: center;
-  margin-top: 70px;
-}
-
-.home .discover:hover {
-  background-color: #022831;
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-body{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: poppins, sans-serif;
-  background: linear-gradient(30deg, rgba(0,0,0, 0.3), rgba(0,0,0,0.4)),
-              url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
-  background-size: cover;
-  background-repeat: repeat;
-}
-
-/*The booking page style */
 form{
-  margin: 10px;
-  padding: 10px;
-}
-.booking-form-container{
-  width: 400px;
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  justify-content: center;
-  /*align-items: center;*/
-  padding: 0 20px 20px 20px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  position: relative;
-  top: 100px;
-  margin-bottom: 200px;
+    background: white;
+    padding: 1rem;
+  }
+  
+  h2{
+    text-align: center;
+    margin: 1rem;
+    color: #333;
+  }
+  
+  section{
+    margin-bottom: 1rem;
+  }
+  
+  /* #first-section,
+  #second-section{
+    display: flex;
+    gap: 1.5rem;
+  } */
+  
+  input{
+    border-radius: 20px;
+    padding: 1rem;
+    border: 2px solid #04566e;
+    color: #A2B3CC;
+  }
+  
+  .explore{
+      font-size: 26px;
+      color: #04566e;
+      margin-right: 200px;
+      margin-bottom: 50px;
+      margin-right: 50px;
 
-}
-.booking-form-container h2{
-  font-size: 24px;
-  text-align: center;
-  color: #fff;
-  padding: 15px 10px;
-  margin-top: 10px;
-}
-.input-container{
-  display: flex;
-  width: 100%;
-  padding-bottom: 16px;
-}
-.icon{
-  width: 50px;
-  padding: 12px;
-  background-color: #04566e;
-  color: #fff;
-  text-align: center;
-}
-.input_text{
-  width: 100%;
-  padding: 12px;
-}
+  }
 
-.btn{
-  width: 100%;
-  padding: 15px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #04566e;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-.btn:hover{
-  background-color: #689368;
-}
+  #exp{
+      margin-left: 180px;
+  }
+
+  #email{
+    width: 52%
+  }
+  
+  button{
+    width: 30%;
+    border-radius: 10px;
+    background: #04566e;
+    border: none;
+    color: white;
+    padding: 1rem;
+    margin-top: 20px;
+    margin-left: 120px;
+  }
+
+  .sign{
+      margin-top: 150px;
+      align-items: center;
+      margin-bottom: 150px;
+  }
+
+  .form-sign{
+      align-items: center;
+  }
 
 
 
-/* The payment page style */
-.payment-container{
-  width: 400px;
-  height: 100vh;
-  margin: auto;
-  padding: 10px 20px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.2);
-  position: relative;
-  top: 100px;
-  margin-bottom: 100px;
-}
-.payment-header h2{
-  font-size: 24px;
-  color: #fff;
-}
-.payment-header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-
-}
-.img-container{
-  padding-left: 12px;
-  margin-left: 10px;
-
-}
-.payment-header img{
-  width: 40px;
-  height: 40px;
-}
-.payment-content{
-  margin: 10px;
-}
-
-.input-section{
-  width: 100%;
-  padding: 10px 0;
-  padding-left: 5px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: none;
-}
-.card-brief{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-label{
-  font-size: 18px;
-  font-weight: bold;
-  padding-bottom: 10px;
-  color: #fff;
-}
 
 /* FOOTER SECTION */
 .footer {

@@ -1,12 +1,5 @@
-<<<<<<< HEAD:css/style.css
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
-=======
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-
-
->>>>>>> 53521a4496d8b38023be1855d33edb1a355c6e26:assets/css/booking.css
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -120,8 +113,12 @@ header .icons i:hover {
   display: none;
 }
 
-/*.home {
-  background-image: url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+/* Activities page */
+
+.home {
+  background-image: url(
+    https://nevadahotelsandsuites.com/wp-content/uploads/2021/02/Tourist-Attractions-in-Lagos-1.jpg
+    );
   background-size: cover;
   background-position: 100%;
   height: 100vh;
@@ -130,10 +127,13 @@ header .icons i:hover {
   flex-flow: column;
   position: relative;
   z-index: 0;
-}*/
+  padding: 2rem 9%;
+}
+
 
 .home .content {
   margin-left: 10px;
+  
 }
 
 .home .content h2 {
@@ -184,144 +184,169 @@ body{
   padding: 0;
   box-sizing: border-box;
   font-family: poppins, sans-serif;
-  background: linear-gradient(30deg, rgba(0,0,0, 0.3), rgba(0,0,0,0.4)),
-              url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
-  background-size: cover;
-  background-repeat: repeat;
+}
+:root {
+    /* colors */
+  
+    --primary: #04556e;
+    --secondary: #022831;
+    -tertiary: #689368;
+  }
+  
+
+
+
+
+/* MAIN SECTION */
+/* .header-section {
+    padding-top: 30px;
+    text-align: center;
+    
+} */
+
+.tourist{
+    padding: 20px 0;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--secondary);
+    font-size: 30px;
+    
 }
 
-/*The booking page style */
-form{
-  margin: 10px;
-  padding: 10px;
-}
-.booking-form-container{
-  width: 400px;
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  justify-content: center;
-  /*align-items: center;*/
-  padding: 0 20px 20px 20px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  position: relative;
-  top: 100px;
-  margin-bottom: 200px;
-
-}
-.booking-form-container h2{
-  font-size: 24px;
+.container {
   text-align: center;
-  color: #fff;
-  padding: 15px 10px;
-  margin-top: 10px;
-}
-.input-container{
-  display: flex;
-  width: 100%;
-  padding-bottom: 16px;
-}
-.icon{
-  width: 50px;
-  padding: 12px;
-  background-color: #04566e;
-  color: #fff;
-  text-align: center;
-}
-.input_text{
-  width: 100%;
-  padding: 12px;
+  /* border: 4px solid red; */
 }
 
-.btn{
-  width: 100%;
-  padding: 15px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #04566e;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-.btn:hover{
-  background-color: #689368;
+.container-section {
+   padding: 10px 0;
+   text-transform: uppercase;
+   font-size: 20px;
+   color: var(--secondary);
 }
 
+.container-paragraph {
+    margin: 0 auto;
+    width: 70%;
+    line-height: 1.5;
+    word-spacing: .1rem;
+    font-size: 15px;
+  
+}
+
+/* SECTION */
+.section {
+    padding: 10px;
+    /* border: 5px solid blue; */
+  
+}
+
+.section h2 {
+    /* font-size: 40px; */
+    padding: 20px 0;
+    font-weight: bold;
+    color: var(--secondary);
+    margin-bottom: 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all .2s;
+}
 
 
-/* The payment page style */
-.payment-container{
-  width: 400px;
-  height: 100vh;
-  margin: auto;
+
+/* PROJECT CARDS */
+.project-card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+     margin-bottom: 20px; 
+     margin-top: 10px;
+    /* border: 5px solid red; */
+}
+
+.project-card {
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+     /* width: 27%;  */
+  
+    
+    
+    
+}
+
+.project-card:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+}
+
+.project-card-img {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.card-content {
+    width: 300px;
+    padding: 2px 10px;
+    
+}
+
+.project-title {
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 17px;
+    text-transform: uppercase;
+    overflow: hidden;
+    
+}
+
+.project-brief {
+    font-size: 15px;
+    text-align: center;
+    overflow: hidden;
+
+}
+    
+/* button */
+.btns {
   padding: 10px 20px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.2);
-  position: relative;
-  top: 100px;
-  margin-bottom: 100px;
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  background-color: var(--primary);
+  margin: 10px auto;
 }
-.payment-header h2{
-  font-size: 24px;
-  color: #fff;
-}
-.payment-header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-
-}
-.img-container{
-  padding-left: 12px;
-  margin-left: 10px;
-
-}
-.payment-header img{
-  width: 40px;
-  height: 40px;
-}
-.payment-content{
-  margin: 10px;
+.btns:hover {
+  padding: 10px 30px;
+  opacity: 0.5;
 }
 
-.input-section{
-  width: 100%;
-  padding: 10px 0;
-  padding-left: 5px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: none;
-}
-.card-brief{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-label{
-  font-size: 18px;
-  font-weight: bold;
-  padding-bottom: 10px;
-  color: #fff;
-}
+/* hr */
 
+hr { 
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 90%;
+  } 
 /* FOOTER SECTION */
 .footer {
   background-color: #04566e;
+  padding: 2rem 9%;
 }
 
 .footer .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  
 }
 
 .footer .box-container .box {
@@ -366,67 +391,34 @@ label{
 .footer .credit span {
   color: #b4d330;
 }
-
-/* MAKING THE PAGE RESPONSIVE */
-
-/* media queries  */
-
-@media (max-width: 1200px) {
-  html {
-    font-size: 55%;
+@media only screen and (max-width: 900px) {
+  .about{
+      padding: 0 10px;
+  }
+  .founder{
+      padding:50px 20px 50px 20px;
+  }
+  .founder-wrapper{
+      display: block;
+  }
+  .f-card{
+      margin-bottom: 30px;
+  }
+  .fun-fact{
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+  .fast-wrapper{
+      display: grid;
+      grid-template-columns: 45% 45%;
+      justify-content: space-between;
+  }
+  .fast-card{
+      margin-bottom: 30px;
   }
 }
-
-@media (max-width: 991px) {
-  header {
-    padding: 2rem;
-  }
-
-  section {
-    padding: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #menu-bar {
-    display: initial;
-  }
-
-  header .navbar {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    background-color: #04566e;
-    width: 30%;
-    border-top: 0.1rem solid #022831;
-    padding: 1rem 2rem;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-
-  header .navbar.active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-
-  header .navbar a {
-    display: block;
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-    background-color: #04566e;
-  }
-}
-
-@media (max-width: 450px) {
-  html {
-    font-size: 50%;
-  }
-
-  .heading span {
-    font-size: 2.5rem;
-  }
-
-  .contact .row form .inputBox input {
-    width: 100%;
+@media only screen and (max-width: 400px) {
+  .fast-wrapper{
+      display: block;
   }
 }
