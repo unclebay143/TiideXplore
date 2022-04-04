@@ -14,7 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-display: "poppins", sans-serif; 
+    font-display: "poppins", sans-serif;
 }
 
 /* Header Section */
@@ -91,7 +91,7 @@
     color: #022831;
   }
   
-header {
+    header {
     position: relative;
     background-color: #04566e; 
     z-index: 1000;
