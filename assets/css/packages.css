@@ -1,73 +1,201 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+:root {
+  /* colors */
 
-header{
-  background-image: url(https://media.istockphoto.com/photos/african-city-by-night-lagos-nigeria-picture-id900714738?b=1&k=20&m=900714738&s=170667a&w=0&h=b3qohgMDS8cdHp77mjad5FEqiSL74BhT1uUviXUodTs=);
-background-size: cover;
-background-position: 50%;
-height: 70vh;
-position: relative;
-padding-bottom: 2rem;
-margin-bottom: 2rem;
+  --primary: #04556e;
+  --secondary: #022831;
+  -tertiary: #689368;
 }
 
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+body {
+  /* font-family: 'Poppins', sans-serif; */
+  color: var(--secondary);
+  transition: all 0.5s ease-in-out;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
 
-.header-content-wrapper{
-  position: relative;
-  z-index: 1;
+header section {
+  padding: 2rem 9%;
+  
+}
+
+.heading {
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+.heading span {
+  font-size: 3.5rem;
+  background: #022831;
+  color: #022831;
+  border-radius: 0.5rem;
+  padding: 0.2rem 1rem;
+}
+
+.heading span.space {
+  background: none;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--blue);
+  color: #fff;
+  padding: 0.8rem 3rem;
+  border: 0.2rem solid var(--blue);
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: 24px;
+}
+
+.btn:hover {
+  background: #022831;
+  color: #022831;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+   background-color: #04566e; 
+  z-index: 1000;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  padding: 2rem 4rem;
+  padding: 2rem 9%;
 }
-
-.fullname{
-  font-size: 30px;
-  color: limegreen;
-  font-weight: bold;
-  margin-top: 8rem;
-}
-
-
-
-
-/*.nav-link1*/
-.nav-link1{
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none; /* remove underline */
-  transition: 0.5s;
-  padding: 10px;
-  margin: 8px;
-}
-
-
-.nav-link1.active{
-  color: limegreen;
-}
-
-.hero-wrapper{
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 50px;
-}
-
 
 header .logo {
-  font-size: 30px;
+  font-size: 2.5rem;
   font-weight: bolder;
   color: #fff;
   text-transform: none;
 }
 
 header .logo span {
-  font-size: 30px;
+  font-size: 2.8rem;
   color: #b4d330;
 }
+
+header .navbar a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 0.8rem;
+}
+
+header .navbar a:hover {
+  color: #022831;
+}
+
+header .icons i {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+header .icons i:hover {
+  color: #022831;
+}
+
+#menu-bar {
+  color: #fff;
+  border: 0.1rem solid #fff;
+  border-radius: 0.5rem;
+  font-size: 3rem;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.home {
+  background-image: url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+  background-size: cover;
+  background-position: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  z-index: 0;
+  padding: 2rem 9%;
+  opacity: 80%;
+  margin-bottom: 70px;
+}
+
+.home .content {
+  margin-left: 10px;
+}
+
+.home .content h2 {
+  font-size: 64px;
+  font-weight: bold;
+  text-align: left;
+  color: #fff;
+  text-transform: none;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.home .content h3 {
+  font-size: 54px;
+  font-weight: normal;
+  text-align: left;
+  color: #fff;
+  margin-top: 10px;
+  text-transform: none;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.home .content p {
+  font-size: 30px;
+  color: #fff;
+  padding: 0.5rem 0;
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* .home .discover {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 26px;
+  background-color: #04566e;
+  width: 20%;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.home .discover:hover {
+  background-color: #022831;
+}
+
+.home .discover span {
+  color: #fff;
+} */
 
 
 .section h2{
@@ -77,6 +205,7 @@ header .logo span {
   margin-bottom: 10px 0;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 10px;
 }
 
 .packages-card-wrapper {
@@ -84,6 +213,8 @@ header .logo span {
   align-items: center;
   gap: 100px;
   margin-top: 2rem;
+  margin-right: 6rem;
+  margin-left: 6rem;
 }
 
 .packages-card {
@@ -107,6 +238,7 @@ header .logo span {
 .package-tittle {
   color: black;
   margin-bottom: 10px;
+  margin-top: 10px;
   font-size: 17px;
 }
 
@@ -118,7 +250,7 @@ header .logo span {
 
 .package-links {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   margin-top: 10px;
   gap: 10px;
@@ -127,7 +259,6 @@ header .logo span {
 
 
 .btn{
-  background-color: rgb(180, 206, 206);
   color: black;
   font-size: 12px;
   font-weight: bold;
@@ -139,9 +270,67 @@ header .logo span {
   letter-spacing: 1px;
   cursor: pointer;
   transition: 0.5s;
+  margin-bottom: 40px;
 }
 
 
 .btn:hover{
   opacity: 0.5;
+}
+
+
+
+/* FOOTER SECTION */
+.footer {
+  background-color: #04566e;
+}
+
+.footer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  
+}
+
+.footer .box-container .box {
+  padding: 1rem 0;
+  flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  padding: 0.7rem 0;
+  color: #fff;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  padding: 0.7rem 0;
+  color: #eee;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.7rem 0;
+  color: #eee;
+}
+
+.footer .box-container .box a:hover {
+  color: #d8dfe9;
+  text-decoration: underline;
+}
+
+.footer .credit {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fff;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+}
+
+.footer .credit span {
+  color: #b4d330;
 }

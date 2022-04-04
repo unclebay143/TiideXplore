@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
-
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -84,7 +83,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 9%;
+  padding: 3.5rem 9%;
 }
 
 header .logo {
@@ -170,6 +169,9 @@ header .icons i:hover {
 .home .content p {
   font-size: 30px;
   color: #fff;
+  /* width: 69%;
+  background-color: rgba(0, 0, 0, 0.2); */
+  opacity: 1;
   padding: 0.5rem 0;
   text-align: left;
   margin-top: 10px;
@@ -241,7 +243,6 @@ header .icons i:hover {
 }
 /* Hotel */
 
-
 .place-card-wrapper {
   max-width: 100%;
   display: flex;
@@ -255,7 +256,6 @@ header .icons i:hover {
   height: auto;
 }
 
-
 .place-card {
   width: 47%;
   height: auto;
@@ -263,8 +263,8 @@ header .icons i:hover {
   /* background-color: red; */
   margin-bottom: 30px;
 }
-.place-card h6{
-  margin:3px 0 ;
+.place-card h6 {
+  margin: 3px 0;
 }
 .btns {
   padding: 10px 20px;
@@ -294,7 +294,7 @@ header .icons i:hover {
 }
 
 /* Apartment */
-.apartment{
+.apartment {
   margin-bottom: 30px;
 }
 .apartment-wrapper {
@@ -309,7 +309,7 @@ header .icons i:hover {
   width: 400px;
   cursor: pointer;
 }
-.apartment-card h5{
+.apartment-card h5 {
   margin: 5px 0;
 }
 .apartment-card img:hover {
@@ -484,17 +484,17 @@ header .icons i:hover {
 /* FOOTER SECTION */
 .footer {
   background-color: #04566e;
-  padding: 2rem 9%;
 }
 
 .footer .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+  padding: 2rem 0;
 }
 
 .footer .box-container .box {
-  padding: 1rem 0;
+  padding: 1rem 6rem;
   flex: 1 1 25rem;
 }
 
@@ -503,7 +503,6 @@ header .icons i:hover {
   padding: 0.7rem 0;
   color: #fff;
 }
-
 .footer .box-container .box p {
   font-size: 1.5rem;
   padding: 0.7rem 0;
@@ -524,7 +523,7 @@ header .icons i:hover {
 
 .footer .credit {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 5rem 1rem;
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: normal;
@@ -540,20 +539,11 @@ header .icons i:hover {
 
 /* media queries  */
 
-@media (max-width: 1200px) {
-  html {
-    font-size: 55%;
-  }
-  .place-card-wrapper {
-    flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: 45% 45%;
-  }
-  .place-card {
-    width: 100%;
-  }
-  .section {
-    padding: 10px;
+@media (min-width: 1200px) {
+  .home .content p {
+    width: 67%;
+    background-color: rgba(1, 14, 41, 0.3);
+    border-radius: 4px;
   }
 }
 
