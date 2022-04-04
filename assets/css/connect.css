@@ -69,7 +69,6 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 9%;
-  margin-bottom: 9rem;
 }
 
 header .logo {
@@ -124,19 +123,20 @@ header .icons i:hover {
   /* font-family: poppins; */
   font-size: 28px;
   font-weight: bold;
-  color: teal;
+  color: #04566E;
   margin-bottom: 10px 0;
   text-transform: uppercase;
   text-align: center;
 }
 .connect__header h1 {
   text-align: center;
+  margin: 10px 0px 15px 0px;
   /* font-family: poppins; */
 }
 .card__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
+  gap: 4rem;
   height: 200px;
 }
 .card__connect {
@@ -168,7 +168,7 @@ header .icons i:hover {
   letter-spacing: 1px;
   cursor: pointer;
   transition: 0.5s;
-  margin-left: 37%;
+  margin-left: 35%;
 }
 .button button:hover {
   background: #04566e;
@@ -186,8 +186,9 @@ header .icons i:hover {
 .name {
   font-weight: bold;
   /* font-family: poppins; */
-  line-height: 3px;
+  line-height: 10px;
   margin-top: 8px;
+  font-size: medium;
 }
 .container__wrapper {
   margin: 35px;
@@ -200,6 +201,7 @@ small {
   font-size: medium;
   /* font-family: poppins; */
   line-height: 3px;
+  margin-top: 10px;
 }
 
 .see_more_btn {
@@ -308,12 +310,11 @@ small {
 .footer .box-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  padding: 2rem 0;
+  gap: 3rem;
 }
 
 .footer .box-container .box {
-  padding: 1rem 6rem;
+  padding: 1rem 0rem;
   flex: 1 1 25rem;
 }
 
@@ -326,6 +327,7 @@ small {
   font-size: 1.5rem;
   padding: 0.7rem 0;
   color: #eee;
+  text-align: justify;
 }
 
 .footer .box-container .box a {
@@ -342,7 +344,7 @@ small {
 
 .footer .credit {
   text-align: center;
-  padding: 5rem 1rem;
+  padding: 2rem 1rem;
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: normal;
@@ -353,3 +355,5 @@ small {
 .footer .credit span {
   color: #b4d330;
 }
+
+ 
