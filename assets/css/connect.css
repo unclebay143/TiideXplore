@@ -176,6 +176,17 @@ header .icons i:hover {
   margin-top: -40px;
 }
 
+.container__wrapper{
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+  margin-bottom: 100px;
+}
+
 .connect_heading {
   /* font-family: poppins; */
   font-size: 28px;
