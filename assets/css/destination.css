@@ -37,7 +37,6 @@ body a {
 
 header section {
   padding: 2rem 9%;
-  
 }
 
 .heading {
@@ -79,12 +78,12 @@ header {
   top: 0;
   left: 0;
   right: 0;
-   background-color: #04566e; 
+  /* background-color: #04566e;  */
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 9%;
+  padding: 3.5rem 9%;
 }
 
 header .logo {
@@ -130,19 +129,25 @@ header .icons i:hover {
   display: none;
 }
 
+#home-active{
+  color: #b4d330;
+}
+
+
 .home {
-  background-image: url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+  background: linear-gradient(30deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+  background-size: cover;
+  background-repeat: repeat;
   background-size: cover;
   background-position: 100%;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   flex-flow: column;
   position: relative;
   z-index: 0;
   padding: 2rem 9%;
-  opacity: 80%;
-  margin-bottom: 70px;
 }
 
 .home .content {
@@ -172,6 +177,9 @@ header .icons i:hover {
 .home .content p {
   font-size: 30px;
   color: #fff;
+  /* width: 69%;
+  background-color: rgba(0, 0, 0, 0.2); */
+  opacity: 1;
   padding: 0.5rem 0;
   text-align: left;
   margin-top: 10px;
@@ -196,7 +204,6 @@ header .icons i:hover {
 .home .discover span {
   color: #fff;
 } */
-
 
 /* PACKAGE CARDS */
 
