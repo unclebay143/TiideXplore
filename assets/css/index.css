@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
-
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -84,7 +83,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 9%;
+  padding: 3.5rem 9%;
 }
 
 header .logo {
@@ -130,8 +129,16 @@ header .icons i:hover {
   display: none;
 }
 
+#home-active{
+  color: #b4d330;
+}
+
+
 .home {
-  background-image: url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+  background: linear-gradient(30deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+  background-size: cover;
+  background-repeat: repeat;
   background-size: cover;
   background-position: 100%;
   height: 100vh;
@@ -170,6 +177,9 @@ header .icons i:hover {
 .home .content p {
   font-size: 30px;
   color: #fff;
+  /* width: 69%;
+  background-color: rgba(0, 0, 0, 0.2); */
+  opacity: 1;
   padding: 0.5rem 0;
   text-align: left;
   margin-top: 10px;
@@ -241,7 +251,6 @@ header .icons i:hover {
 }
 /* Hotel */
 
-
 .place-card-wrapper {
   max-width: 100%;
   display: flex;
@@ -255,7 +264,6 @@ header .icons i:hover {
   height: auto;
 }
 
-
 .place-card {
   width: 47%;
   height: auto;
@@ -263,8 +271,8 @@ header .icons i:hover {
   /* background-color: red; */
   margin-bottom: 30px;
 }
-.place-card h6{
-  margin:3px 0 ;
+.place-card h6 {
+  margin: 3px 0;
 }
 .btns {
   padding: 10px 20px;
@@ -294,7 +302,7 @@ header .icons i:hover {
 }
 
 /* Apartment */
-.apartment{
+.apartment {
   margin-bottom: 30px;
 }
 .apartment-wrapper {
@@ -309,7 +317,7 @@ header .icons i:hover {
   width: 400px;
   cursor: pointer;
 }
-.apartment-card h5{
+.apartment-card h5 {
   margin: 5px 0;
 }
 .apartment-card img:hover {
@@ -482,6 +490,64 @@ header .icons i:hover {
 }
 
 /* FOOTER SECTION */
+.footer {
+  background-color: #04566e;
+}
+
+.footer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.footer .box-container .box {
+  padding: 1rem 6rem;
+  flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  padding: 0.7rem 0;
+  color: #fff;
+}
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  padding: 0.7rem 0;
+  color: #eee;
+  line-height: 1.5;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.7rem 0;
+  color: #eee;
+}
+
+.footer .box-container .box a:hover {
+  color: #d8dfe9;
+  text-decoration: underline;
+}
+
+.footer .credit {
+  text-align: center;
+  padding: 5rem 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fff;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+}
+
+.footer .credit span {
+  color: #b4d330;
+}
+
+/* MAKING THE PAGE RESPONSIVE */
+
+/* media queries  */
+
 
 @media (max-width: 991px) {
   header {
