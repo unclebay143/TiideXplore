@@ -140,14 +140,29 @@ header .icons i:hover {
   background-size: cover;
   background-repeat: repeat;
   background-size: cover;
-  background-position: 100%;
-  height: 100vh;
+  background-position: 90%;
+  height: 90vh;
   display: flex;
   justify-content: center;
   flex-flow: column;
   position: relative;
   z-index: 0;
-  padding: 2rem 9%;
+  padding: 10px 10px;
+}
+
+.header-overlay{
+  background-color: 0 0 0 0.3; 
+  position: absolute;
+  height: 90vh; 
+  width: 100%;
+}
+
+.overlay{
+  background-color: black; 
+  position: absolute;
+  height: 90vh; 
+  width: 100%;
+  
 }
 
 .home .content {
@@ -214,16 +229,18 @@ header .icons i:hover {
   text-transform: uppercase;
   text-align: center;
   margin-top: 10px;
+  padding-top: 2rem;
 }
 
 .packages-card-wrapper {
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 50px;
   margin-top: 2rem;
   margin-right: 6rem;
   margin-left: 6rem;
 }
+
 
 .packages-card {
   padding: 10px 6px;
