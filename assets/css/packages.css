@@ -151,7 +151,7 @@ header .icons i:hover {
 }
 
 .header-overlay{
-  background-color: black; 
+  background-color: 0 0 0 0.3; 
   position: absolute;
   height: 90vh; 
   width: 100%;
