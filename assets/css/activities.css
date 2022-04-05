@@ -250,8 +250,7 @@ header .icons i:hover {
 
 /* SECTION */
 .section {
-    padding: 10px;
-    /* border: 5px solid blue; */
+     padding: 10px;
   
 }
 
@@ -285,8 +284,7 @@ header .icons i:hover {
   .project-card-wrapper {
     flex-direction: column;
     flex-wrap: wrap;
-    border: 5px solid blue; 
-    
+   
   }
 }
 
@@ -400,13 +398,13 @@ hr {
 /* FOOTER SECTION */
 .footer {
   background-color: #04566e;
-  padding: 2rem 9%;
 }
 
 .footer .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+  
 }
 
 .footer .box-container .box {
@@ -451,4 +449,3 @@ hr {
 .footer .credit span {
   color: #b4d330;
 }
-
