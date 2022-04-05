@@ -83,7 +83,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 9%;
+  padding: 3.5rem 9%;
 }
 
 header .logo {
@@ -129,8 +129,16 @@ header .icons i:hover {
   display: none;
 }
 
+#home-active{
+  color: #b4d330;
+}
+
+
 .home {
-  background-image: url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+  background: linear-gradient(30deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+  background-size: cover;
+  background-repeat: repeat;
   background-size: cover;
   background-position: 100%;
   height: 100vh;
@@ -169,6 +177,9 @@ header .icons i:hover {
 .home .content p {
   font-size: 30px;
   color: #fff;
+  /* width: 69%;
+  background-color: rgba(0, 0, 0, 0.2); */
+  opacity: 1;
   padding: 0.5rem 0;
   text-align: left;
   margin-top: 10px;
@@ -239,22 +250,29 @@ header .icons i:hover {
   height: 150px;
 }
 /* Hotel */
+
 .place-card-wrapper {
   max-width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 50px;
   margin: 0 auto;
   flex-wrap: wrap;
-  margin-bottom: 80px;
+  /* margin-bottom: 20px; */
   height: auto;
 }
+
 .place-card {
   width: 47%;
-  height: 300px;
-  margin-bottom: 70px;
+  height: auto;
+  padding: 0 3%;
+  /* background-color: red; */
+  margin-bottom: 30px;
+}
+.place-card h6 {
+  margin: 3px 0;
 }
 .btns {
   padding: 10px 20px;
@@ -271,7 +289,7 @@ header .icons i:hover {
 }
 .place-card img {
   object-fit: fill;
-  width: 90%;
+  width: 100%;
   height: 300px;
 }
 .place-card img:hover {
@@ -284,6 +302,9 @@ header .icons i:hover {
 }
 
 /* Apartment */
+.apartment {
+  margin-bottom: 30px;
+}
 .apartment-wrapper {
   display: flex;
   width: 100%;
@@ -295,6 +316,9 @@ header .icons i:hover {
 .apartment-card {
   width: 400px;
   cursor: pointer;
+}
+.apartment-card h5 {
+  margin: 5px 0;
 }
 .apartment-card img:hover {
   opacity: 0.7;
@@ -351,6 +375,7 @@ header .icons i:hover {
 }
 .rest-card h3 {
   color: white;
+  margin: 3px 0;
 }
 .rest-card h6 {
   font-size: 75%;
@@ -373,9 +398,9 @@ header .icons i:hover {
 /* Taxis*/
 .taxis {
   margin-top: 50px;
-  border-top: 3px solid var(--secondary);
+  /* border-top: 3px solid var(--secondary);
   border-bottom: 3px solid var(--secondary);
-  border-radius: 50px;
+  border-radius: 50px; */
   /* height: 500px;    */
   padding: 20px;
 }
@@ -453,7 +478,7 @@ header .icons i:hover {
 .car-card h5 {
   font-size: 120%;
   /* height: 15px; */
-  padding-top: 2px;
+  margin: 3px 0;
 }
 .car img {
   width: 250px;
@@ -467,17 +492,17 @@ header .icons i:hover {
 /* FOOTER SECTION */
 .footer {
   background-color: #04566e;
-  padding: 2rem 9%;
 }
 
 .footer .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+  padding: 2rem 0;
 }
 
 .footer .box-container .box {
-  padding: 1rem 0;
+  padding: 1rem 6rem;
   flex: 1 1 25rem;
 }
 
@@ -486,11 +511,11 @@ header .icons i:hover {
   padding: 0.7rem 0;
   color: #fff;
 }
-
 .footer .box-container .box p {
   font-size: 1.5rem;
   padding: 0.7rem 0;
   color: #eee;
+  line-height: 1.5;
 }
 
 .footer .box-container .box a {
@@ -507,7 +532,7 @@ header .icons i:hover {
 
 .footer .credit {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 5rem 1rem;
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: normal;
@@ -523,22 +548,6 @@ header .icons i:hover {
 
 /* media queries  */
 
-@media (max-width: 1200px) {
-  html {
-    font-size: 55%;
-  }
-  .place-card-wrapper {
-    flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: 45% 45%;
-  }
-  .place-card {
-    width: 100%;
-  }
-  .section {
-    padding: 10px;
-  }
-}
 
 @media (max-width: 991px) {
   header {
