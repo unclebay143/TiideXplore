@@ -217,6 +217,7 @@ small {
   letter-spacing: 1px;
   cursor: pointer;
   transition: 0.5s;
+  margin-top: -15px;
 }
 .see_more_btn:hover {
   color: white;
