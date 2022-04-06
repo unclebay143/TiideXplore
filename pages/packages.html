@@ -4,42 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./../assets/css/packages.css">
+    <title>TiideXplore</title>
+     <!-- FONT AWESOME CDN LINK -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+     <!-- CUSTOM CSS LINK  -->
+     <link rel="stylesheet" href="./../assets/css/packages.css">
 </head>
 <body>
-
+    <!-- NAVBAR SECTION -->
     <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
 
-        <!---NAVIGATION SECTION-->
-        <section class="header-content-wrapper">
-          <div id="menu-bar" class="fas fa-bars"></div>
-  
-
-          
         <a href="#" class="logo">Tiide<span>X</span>plore</a>
-          <nav class="nav-link-wrapper">
-            <a href="#" class="nav-link1 active">Packages</a>
-            <a href="#about" class="nav-link1">Weekend Getaway</a>
-            <a href="#projects" class="nav-link1">Honeymoon Packages</a>
-            <a href="#projects" class="nav-link1">Friends Getaway</a>
-            <a href="#projects" class="nav-link1">Road Trip</a>
-            <a href="#projects" class="nav-link1">Goldenmoon Package</a>
-            <a href="#projects" class="nav-link1">Family Bonding</a>
+
+        <nav class="navbar">
+            <a href="pages/index.html">Home</a>
+            <a href="pages/booking.html">Book</a>
+            <a href="#" id="home-active">Packages</a>
+            <a href="#services">Services</a>
+            <a href="pages/destination.html">Destination</a>
+            <a href="pages/review.html">Review</a>
+            <a href="pages/contact.html">Contact</a>
+            <a href="pages/activities.html">Activities</a>
+
         </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <a href="pages/Sign-In.html"><i class="fas fa-user" id="login-btn"></i></a>
+        </div>
+
+        <div id="overlay" class="header-overlay"></div>
+
+
+    </header>
+
+    <!-- HOME SECTION  -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h2>Explore</h2>
+            <h3>your amazing city, Lagos</h3>
+            <p>find great places to visit and tour the beautiful sites</p>
+        </div>
+
+        <!-- <button class="discover"><a href="#"><span>GET STARTED</span></a></button> -->
+
+
     </section>
-  
-        <!--HERO SECTION-->
-        <section class="hero-wrapper">
-          <h2 class="fullname">Places you don't know exist!!!</h2>
-          
-        </section>
-      </header>  
-  
 
-    <!-- Packages -->
 
-    <section class="section packages-section" id="packages">
+     <!-- Packages -->
+
+     <section class="section packages-section" id="packages">
         <h2 class="packages-tittle">Packages</h2>
         
 <div class="section packages-card-wrapper">
@@ -110,5 +128,46 @@
   </div>
 </div>
 </section>
-</body>
-</html>
+
+
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>TiideXplore offers you the best travel/tourist experience here in Lagos, Nigeria. When was the last time you did something for the first time? Explore with us!</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">Lekki</a>
+            <a href="#">Ikeja</a>
+            <a href="#">Victoria Island</a>
+            <a href="#">Ajah</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">book</a>
+            <a href="#">packages</a>
+            <a href="#">services</a>
+            <a href="#">gallery</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us on</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>  
+
+    </div>
+
+    <h1 class="credit"> Copyright @ <span> TiideXplore </span> 2022 | all rights reserved! </h1>
+
+</section>
+</div>
+</div>
