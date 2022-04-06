@@ -86,7 +86,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 9%;
+  padding: .2rem 9%;
+
 }
 
 header .logo {
@@ -101,14 +102,30 @@ header .logo span {
   color: #b4d330;
 }
 
-header .navbar a {
+header .navbar  {
+  float: right;
+  margin-right: 20px;
+
+  
+} 
+
+header .navbar li {
+    display: inline-block;
+    line-height: 80px;
+    /* margin: 0 5px; */
+}
+
+header .navbar li a {
   color: #fff;
   font-size: 2rem;
-  margin: 0 0.8rem;
+  margin: 0 0.8rem; 
+ 
+  
 }
 
 header .navbar a:hover {
   color: #022831;
+  transition: .5s;
 }
 
 header .icons i {
@@ -120,6 +137,19 @@ header .icons i {
 
 header .icons i:hover {
   color: #022831;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
 }
 
 #menu-bar {
@@ -137,6 +167,48 @@ header .icons i:hover {
 
 }
 
+@media (max-width: 952px){
+  header .navbar li a{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  .navbar{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #022831;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  header .navbar li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  header .navbar li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ .navbar{
+    left: 0;
+  }
+}
+
+
+
+
+
+
 /* Activities page */
 
 .home {
@@ -144,6 +216,7 @@ header .icons i:hover {
     https://nevadahotelsandsuites.com/wp-content/uploads/2021/02/Tourist-Attractions-in-Lagos-1.jpg
     );
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: 100%;
   height: 100vh;
   display: flex;
@@ -153,7 +226,6 @@ header .icons i:hover {
   z-index: 0;
   padding: 2rem 9%;
 }
-
 
 .home .content {
   margin-left: 10px;
@@ -169,8 +241,18 @@ header .icons i:hover {
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
+/* MEDIA QUERY FOR CONTENT H2 */
+ @media (max-width: 600px) {
+  .home .content h2 {
+    font-size: 50px;
+    
+   
+  }
+} 
+
+
 .home .content h3 {
-  font-size: 50px;
+  font-size: 52px;
   font-weight: normal;
   text-align: left;
   color: #fff;
@@ -178,28 +260,19 @@ header .icons i:hover {
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
-.home .content p {
-  font-size: 24px;
-  color: #fff;
-  padding: 0.5rem 0;
-  text-align: left;
-}
+/* MEDIA QUERY FOR CONTENT H3 */
+ @media (max-width: 600px) {
+  .home .content h3 {
+    font-size: 50px;
+    text-align: left;
+    /* color: #022831; */
+    font-weight: bold;
+   
+  }
+} 
 
-.home .discover {
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 26px;
-  background-color: #04566e;
-  width: 20%;
-  border-radius: 10px;
-  text-align: center;
-  margin-top: 70px;
-}
 
-.home .discover:hover {
-  background-color: #022831;
-}
+
 
 /* MAIN SECTION */
 /* .header-section {
@@ -284,6 +357,9 @@ header .icons i:hover {
   .project-card-wrapper {
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
    
   }
 }
@@ -295,7 +371,8 @@ header .icons i:hover {
     transition: 0.3s;
     border-radius: 5px;
     max-width: 100%; 
-     /* width: 27%;  */
+    
+      
 }
 
 .project-card:hover {
@@ -304,21 +381,36 @@ header .icons i:hover {
 
 .project-card-img {
     width: 100%;
-    height: 250px;
+    height: 200px;
     overflow: hidden;
+    /* border: 2px solid red; */
 }
 
 @media only screen and (max-width: 600px) {
-  .project-card-img {
-    width: 90%;
+  .project-card-img { 
+    width: 100%;  
     overflow: hidden;
+
   }
 }
 .card-content {
     width: 300px;
     padding: 2px 10px;
+  
     
 }
+
+/* media query for card-content */
+@media (max-width: 600px) {
+  .card-content {
+    display: inline-block;
+    font-size: 10px;
+    width: 100%;
+    
+    
+  }
+}
+
 
 .project-title {
     color: var(--secondary);
@@ -330,17 +422,18 @@ header .icons i:hover {
     
 }
 
-/* media query foor prroject-title */
+/* media query foor project-title */
+
+
 @media (max-width: 600px) {
+
   .project-title {
     display: block;
     font-size: 12px;
     text-align: center;
-    margin: auto 0;
-    padding: 5px 0;
-    max-width: 50%;
+    
   }
-}
+} 
 
 
 
@@ -354,12 +447,9 @@ header .icons i:hover {
   .project-brief {
     display: block;
     font-size: 10px;
-    text-align: center;
-    margin: auto 0;
-    max-width: 60%;
-    
+    text-align: center;    
   }
-}
+} 
 
 
 
