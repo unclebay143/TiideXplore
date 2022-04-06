@@ -18,18 +18,19 @@
     <a href="#" class="logo">Tiide<span>X</span>plore</a>
 
     <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#book">Book</a>
-        <a href="#packages">Packages</a>
+        <a href="./../index.html" id="home-active">Home</a>
+        <a href="./booking.html" >Book</a>
+        <a href="./packages.html" >Packages</a>
         <a href="#services">Services</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#review">Review</a>
-        <a href="#contact">Contact</a>
+        <a href="./destination.html" >Destination</a>
+        <a href="./review.html" >Review</a>
+        <a href="./Contact.html" >Contact</a>
+        <a href="./activities.html">Activities</a>
     </nav>
 
     <div class="icons">
         <i class="fas fa-search" id="search-btn"></i>
-        <i class="fas fa-user" id="login-btn"></i>
+        <a href="./Sign-In.html"><i class="fas fa-user" id="login-btn"></i></a>
     </div>
 
 </header>
@@ -81,7 +82,7 @@
             </div>
             
             <div class="payment-content">
-                <button class="btn">Check-out</button>
+                <button class="btn" onclick="openPopUp()">Check-out</button>
             </div>
 
 
@@ -127,5 +128,37 @@
 
     <h1 class="credit"> Copyright @ <span> TiideXplore </span> 2022 | all rights reserved! </h1>
     
+
+    <!--POPUP CARD-->
+    <div class="connect-card" id="connect-card">
+        <div class="connect-header">
+            <h2>SUCCESS</h2>
+            <p>Payment Recieved</p>
+        </div>
+        <div class="connect-content">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-check-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                    d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+            </svg>
+        </div>
+        <button onclick="closePopUp()" class="connect-btn" id="connect-btn">OK</button>
+    </div>
+
+
+    <!--Script pop-->
+
+    <script>
+        let popup = document.getElementById('connect-card');
+
+        function openPopUp() {
+            popup.classList.add('open-pop');
+        }
+
+        function closePopUp() {
+            popup.classList.remove('open-pop');
+        }
+    </script>
 </body>
 </html>
