@@ -9,7 +9,12 @@
   outline: none;
   border: none;
   text-decoration: none;
-  transition: all 0.2s linear;
+}
+
+.active{
+  font-weight: 800;
+  text-decoration: underline;
+
 }
 
 html {
@@ -198,8 +203,8 @@ form {
   border: 1px solid #fff;
   border-radius: 5px;
   position: relative;
-  top: 100px;
-  margin-bottom: 200px;
+  top: 200px;
+  margin-bottom: 320px;
 }
 .booking-form-container h2 {
   font-size: 24px;
@@ -243,7 +248,7 @@ form {
 /* The payment page style */
 .payment-container {
   width: 400px;
-  height: 100vh;
+  /* height: 100vh; */
   margin: auto;
   padding: 10px 20px;
   border: 1px solid #fff;
@@ -253,8 +258,8 @@ form {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.2);
   position: relative;
-  top: 100px;
-  margin-bottom: 100px;
+  top: 170px;
+  margin-bottom: 300px;
 }
 .payment-header h2 {
   font-size: 24px;
@@ -325,6 +330,7 @@ label {
   font-size: 1.5rem;
   padding: 0.7rem 0;
   color: #eee;
+  line-height: 1.5;
 }
 
 .footer .box-container .box a {
@@ -415,4 +421,77 @@ label {
   .contact .row form .inputBox input {
     width: 100%;
   }
+}
+
+/*POPUP CARD*/
+
+* {
+  box-sizing: border-box;
+}
+.connect-card {
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  opacity: 0.9;
+  border: 1px solid #04566e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 10;
+  max-width: 80%;
+  transition: 200ms ease-in-out;
+}
+.open-pop{
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;  
+}
+
+.connect-header{
+  text-align: center;
+}
+
+.connect-header h2{
+  font-size: 28px;
+  font-weight: bold;
+  font-family: poppins, sans-serif;
+  margin-bottom: 10px;
+  color: #04566e;
+  position: relative;
+  top: 0;
+}
+.connect-header p{
+  font-size: 14px;
+  font-family: poppins, sans-serif;
+  color: #04566e;
+}
+
+.connect-content svg{
+    width: 70px;
+    height: 70px;
+    margin: 10px 0;
+    color: #b4d330;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2); 
+    border: none;
+    outline: none;
+    background: none;
+    border-radius: 50%;   
+}
+
+.connect-btn{
+    width: 40%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #04566e;
+    color: #fff;
 }

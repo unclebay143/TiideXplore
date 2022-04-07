@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>connect</title>
+    <title>Connect</title>
     <link rel="stylesheet" href="./../assets/css/connect.css">
     <script src="https://use.fontawesome.com/74fd32194c.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -20,22 +21,37 @@
   
         <nav class="navbar">
             <a href="../index.html" id="home-active">Home</a>
-            <a href="booking.html"  target="_blank" rel="noopener noreferrer">Book</a>
-            <a href="packages.html"  target="_blank" rel="noopener noreferrer">Packages</a>
-            <a href="#services">Services</a>
-            <a href="destination.html"  target="_blank" rel="noopener noreferrer">Destination</a>
-            <a href="review.html"  target="_blank" rel="noopener noreferrer">Review</a>
-            <a href="Contact.html"  target="_blank" rel="noopener noreferrer">Contact</a>
-            <a href="activities.html"  target="_blank" rel="noopener noreferrer">Activities</a>
+            <a href="booking.html">Book</a>
+            <a href="packages.html">Packages</a>
+      <a href="./connect.html" class="active">Connect</a>
+            <a href="destination.html">Destination</a>
+            <a href="review.html">Review</a>
+            <a href="Contact.html">Contact</a>
+            <a href="activities.html">Activities</a>
   
         </nav>
   
         <div class="icons">
             <i class="fas fa-search" id="search-btn"></i>
-            <a href="pages/Sign-In.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-user" id="login-btn"></i></a>
+            <a href="pages/Sign-In.html"><i class="fas fa-user" id="login-btn"></i></a>
         </div>
-  
+        
+
     </header>
+
+
+ <!-- HOME SECTION  -->
+
+ <section class="home" id="home">
+    <div class="content">
+        <h2>Connect</h2>
+        <p>...meet amazing people and eXplore</p>
+    </div>
+    <!-- <div id="overlay" class="header-overlay"></div>  -->
+
+    
+
+</section>
 
 
 <!-- Connect with other travellers section -->
@@ -79,7 +95,7 @@
                 </div>
             </div>
         </div>
-        <div class="container__wrapper"> <br> <br> <br>
+        <div class="container__wrapper" data-aos="fade-left"> <br> <br> <br>
             <div class="card__container">
                 <div class="card__connect">
                     <img class="connect__image" src="../assets/img/Herbalist 2.jpg" alt="">
@@ -115,7 +131,7 @@
                 </div>
             </div>
         </div>
-        <div class="container__wrapper"> <br> <br> <br>
+        <div class="container__wrapper" data-aos="fade-right"> <br> <br> <br>
             <div class="card__container">
                 <div class="card__connect">
                     <img class="connect__image" src="../assets/img/Barniee.png" alt="">
@@ -151,7 +167,7 @@
                 </div>
             </div>
         </div>
-        <div class="container__wrapper"> <br> <br> <br>
+        <div class="container__wrapper" data-aos="fade-left"> <br> <br> <br>
             <div class="card__container">
                 <div class="card__connect">
                     <img class="connect__image" src="../assets/img/Tobi.jpg" alt="">
@@ -233,7 +249,7 @@
                 <a href="#">home</a>
                 <a href="#">book</a>
                 <a href="#">packages</a>
-                <a href="#">services</a>
+                <a href="#">Connect</a>
                 <a href="#">gallery</a>
                 <a href="#">review</a>
                 <a href="#">contact</a>
@@ -255,17 +271,27 @@
 </div>
 
     
-
+    <!-- Connect request sent pop-up -->
     <script>
         let popup = document.getElementById('connect-card');
 
-function openPopUp() {
-    popup.classList.add('open-pop');   
-}
+        function openPopUp() {
+            popup.classList.add('open-pop');
+        }
 
-function closePopUp() {
-    popup.classList.remove('open-pop');   
-}
+        function closePopUp() {
+            popup.classList.remove('open-pop');
+        }
     </script>
+
+    <!-- Animation -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+            offset: 151,
+            duration: 1000
+        });
+      </script>
 </body>
+
 </html>

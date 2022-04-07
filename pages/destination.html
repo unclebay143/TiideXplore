@@ -1,291 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TiideXplore</title>
-     <!-- FONT AWESOME CDN LINK -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-     <!-- CUSTOM CSS LINK  -->
-     <link rel="stylesheet" href="./../assets/css/destination.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TiideXplore</title>
+  <!-- CUSTOM CSS LINK  -->
+  <link rel="stylesheet" href="./../assets/css/destination.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
-    <!-- NAVBAR SECTION -->
-    <header>
-      <div id="menu-bar" class="fas fa-bars"></div>
+  <!-- NAVBAR SECTION -->
+  <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
 
-      <a href="#" class="logo">Tiide<span>X</span>plore</a>
+    <a href="#" class="logo">Tiide<span>X</span>plore</a>
 
-      <nav class="navbar">
-          <a href="#" id="home-active">Home</a>
-          <a href="pages/booking.html"  target="_blank" rel="noopener noreferrer">Book</a>
-          <a href="pages/packages.html"  target="_blank" rel="noopener noreferrer">Packages</a>
-          <a href="#services">Services</a>
-          <a href="pages/destination.html"  target="_blank" rel="noopener noreferrer">Destination</a>
-          <a href="pages/review.html"  target="_blank" rel="noopener noreferrer">Review</a>
-          <a href="pages/contact.html"  target="_blank" rel="noopener noreferrer">Contact</a>
-          <a href="pages/activities.html"  target="_blank" rel="noopener noreferrer">Activities</a>
+    <nav class="navbar">
+      <a href="/index.html">Home</a>
+      <a href="./booking.html">Book</a>
+      <a href="./packages.html">Packages</a>
+      <a href="./connect.html">Connect</a>
+      <a href="./destination.html" class="active">Destination</a>
+      <a href="./review.html">Review</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./activities.html">Activities</a>
 
-      </nav>
+    </nav>
 
-      <div class="icons">
-          <i class="fas fa-search" id="search-btn"></i>
-          <a href="pages/Sign-In.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-user" id="login-btn"></i></a>
-      </div>
+    <div class="icons">
+      <i class="fas fa-search" id="search-btn"></i>
+      <a href="pages/Sign-In.html"><i class="fas fa-user" id="login-btn"></i></a>
+    </div>
+
+    <div id="overlay" class="header-overlay"></div>
 
   </header>
 
   <!-- HOME SECTION  -->
 
   <section class="home" id="home">
-      <div class="content">
-          <h2>Explore</h2>
-          <h3>your amazing city, Lagos</h3>
-          <p>find great places to visit and tour the beautiful sites</p>
-      </div>
+    <div class="content" data-aos="zoom-in">
+      <h2>Destination</h2>
+      <h3>Where do you want to go in Lagos?</h3>
+      <p>find great places to visit and tour the beautiful sites</p>
+    </div>
 
-      <!-- <button class="discover"><a href="#"><span>GET STARTED</span></a></button> -->
+    <!-- <button class="discover"><a href="#"><span>GET STARTED</span></a></button> -->
 
 
   </section>
 
 
-    <!-- Weekend Getaway Section -->
+  <!-- Weekend Getaway Section -->
 
-    <section class="section destination-section" id="destination">
-        <h2 class="getaway">Weekend Getaway</h2>
-  
-        <div class="section destination-card-wrapper">
-          <div class="destination-card">
-            <img
-            src="https://nevadahotelsandsuites.com/wp-content/uploads/2021/02/The-Nike-center-for-Art-and-Culture-1320x848.jpg"
-            alt="Nike Art and Culture"
-          />
-          <section class="card-content">
-            <h3 class="destination-title">Nike Center for Art and Culture</h3>
+  <section class="section destination-section" id="destination">
+    <h2 class="getaway">Weekend Getaway</h2>
+
+    <div class="section destination-card-wrapper">
+      <div class="destination-card">
+        <img data-aos="zoom-in-up"
+          src="https://nevadahotelsandsuites.com/wp-content/uploads/2021/02/The-Nike-center-for-Art-and-Culture-1320x848.jpg"
+          alt="Nike Art and Culture" />
+        <section class="card-content">
+          <h3 class="destination-title">Nike Center for Art and Culture</h3>
           <p class="destination-brief">
             Nike art Galley was founded by a legend known as Oyenike Monica Okundaye.
-            This is the place of a unique art gallery, workshop, and artist retreat. </p>
-  
-            
-          </section>
-          </div>
-          <div class="destination-card">
-            <img
-        src="https://i0.wp.com/refinedng.com/wp-content/uploads/2020/06/DcawuITWsAAfJlo.jpg?fit=720%2C540&ssl=1"
-        alt="geographical map of lekki conserve center"
-      />
-          <section class="card-content">
-            <h3 class="destination-title">Lekki Conservation Centre</h3>
+            This is the place of a unique art gallery, workshop, and artist. </p>
+
+
+        </section>
+      </div>
+      <div class="destination-card">
+        <img data-aos="zoom-in-up"
+          src="https://i0.wp.com/refinedng.com/wp-content/uploads/2020/06/DcawuITWsAAfJlo.jpg?fit=720%2C540&ssl=1"
+          alt="geographical map of lekki conserve center" />
+        <section class="card-content">
+          <h3 class="destination-title">Lekki Conservation Centre</h3>
           <p class="destination-brief">
             This place is very amazing and cool. It was built in 78-hectare in Lagos
-        state.<span id="dots">...</p>
-  
-        
-          </section>
-          </div>
-          <div class="destination-card">
-            <img
-        src="https://nevadahotelsandsuites.com/wp-content/uploads/2021/02/Freedom-Park-Lagos-1320x880.jpg"
-        alt="freedom-park"
-      />
-          <section class="card-content">
-            <h3 class="destination-title">Freedom Park, Lagos</h3>
+            state.
+
+
+        </section>
+      </div>
+      <div class="destination-card">
+        <img data-aos="zoom-in-up"
+          src="https://nevadahotelsandsuites.com/wp-content/uploads/2021/02/Freedom-Park-Lagos-1320x880.jpg"
+          alt="freedom-park" />
+        <section class="card-content">
+          <h3 class="destination-title">Freedom Park, Lagos</h3>
           <p class="destination-brief">
             This park is a leisure and memorial park here in Lagos Island. The park
-        was formerly broad street prison to her Majesty.</p>
-  
-        
-          </section>
-          </div>
-        </div>
-        
-          <div class="section destination-card-wrapper">
-          <div class="destination-card">
-            <img
-        src="https://nevadahotelsandsuites.com/wp-content/uploads/2021/02/Tarkwa-Bay-Beach-1320x848.jpg"
-        alt="beach"
-      />
-          <section class="card-content">
-            <h3 class="destination-title">Takwa Bay Beach</h3>
+            was formerly broad street prison to her Majesty.</p>
+
+
+        </section>
+      </div>
+    </div>
+
+    <div class="section destination-card-wrapper">
+      <div class="destination-card">
+        <img data-aos="zoom-in-up"
+          src="https://nevadahotelsandsuites.com/wp-content/uploads/2021/02/Tarkwa-Bay-Beach-1320x848.jpg"
+          alt="beach" />
+        <section class="card-content">
+          <h3 class="destination-title">Takwa Bay Beach</h3>
           <p class="destination-brief">
             This is a sheltered beach near Lagos Harbor. Tarkwa is a popular place
-        with water –sports and swimmers enthusiasts.</p>
-  
-        
-          </section>
-          </div>
-  
-          <div class="destination-card">
-            <img
-        src="https://nevadahotelsandsuites.com/wp-content/uploads/2021/02/National-theatre-1320x848.jpg"
-        alt="National theater"
-      />
-          <section class="card-content">
-            <h3 class="destination-title">National Theater</h3>
+            with water –sports and swimmers enthusiasts.</p>
+
+
+        </section>
+      </div>
+
+      <div class="destination-card">
+        <img data-aos="zoom-in-up"
+          src="https://nevadahotelsandsuites.com/wp-content/uploads/2021/02/National-theatre-1320x848.jpg"
+          alt="National theater" />
+        <section class="card-content">
+          <h3 class="destination-title">National Theater</h3>
           <p class="destination-brief">
             A cultural landmark and architectural masterpiece, the tower is among the
             best properties in Nigeria, which have stood the test of duration.</p>
-  
-            
-          </section>
-          </div>
-  
-          <div class="destination-card">
-            <img
-        src="https://blog.sugar.ng/files/styles/width-640/public/coconutbeach-BeachLagos2.jpg?itok=IiF4hqT7"
-        alt="National theater"
-      />
-          <section class="card-content">
-            <h3 class="destination-title">Coconut Beach</h3>
+
+
+        </section>
+      </div>
+
+      <div class="destination-card">
+        <img data-aos="zoom-in-up"
+          src="https://blog.sugar.ng/files/styles/width-640/public/coconutbeach-BeachLagos2.jpg?itok=IiF4hqT7"
+          alt="National theater" />
+        <section class="card-content">
+          <h3 class="destination-title">Coconut Beach</h3>
           <p class="destination-brief">
-            You may never want to leave when you get to Coconut Beach, Badagry. Sip on cleansing, 
+            You may never want to leave when you get to Coconut Beach, Badagry. Sip on cleansing,
             nourishing coconut water while you and your spouse take a ton of pictures of your amazing honeymoon.</p>
-  
-            
-          </section>
-          </div>
-        </div>
-        </div>
-      </section>
-  
-      <section class="section destination-section" id="destination">
-        <h2 class="honeymoon">Honeymoon</h2>
-  
-        <div class="section destination-card-wrapper">
-          <div class="destination-card">
-            <img
-            src="https://blog.sugar.ng/files/styles/width-640/public/enroute-ng-la-campagne-tropicana-resort-888-60a99ed9e11730e3d4b7591e5e2869aa793295e....jpg?itok=RlzCNrWh"
-            alt="le campagne"
-          />
-          <section class="card-content">
-            <h3 class="destination-title">La Campagne Tropicana Beach Resort</h3>
+
+
+        </section>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="section destination-section" id="destination">
+    <h2 class="honeymoon">Honeymoon</h2>
+
+    <div class="section destination-card-wrapper">
+      <div class="destination-card">
+        <img data-aos="zoom-in-up"
+          src="https://blog.sugar.ng/files/styles/width-640/public/enroute-ng-la-campagne-tropicana-resort-888-60a99ed9e11730e3d4b7591e5e2869aa793295e....jpg?itok=RlzCNrWh"
+          alt="le campagne" />
+        <section class="card-content">
+          <h3 class="destination-title">La Campagne Tropicana Beach Resort</h3>
           <p class="destination-brief">
             Honeymoon paradise. Play water sports and fish in the Atlantic; spend a
             day hiking in the green tropical forest;</p>
-  
-            
-          </section>
-          </div>
-  
-  
-          <div class="destination-card">
-            <img
-            src="https://blog.sugar.ng/files/styles/width-640/public/Screen%20Shot%202016-05-20%20at%2012.48.11%20AM.png?itok=Vd9gPwi"
-            alt="whispering"
-          />
-          <section class="card-content">
-            <h3 class="destination-title">The Whispering Palms Resort, Badagry</h3>
+
+
+        </section>
+      </div>
+
+
+      <div class="destination-card">
+        <img data-aos="zoom-in-up"
+          src="https://blog.sugar.ng/files/styles/width-640/public/Screen%20Shot%202016-05-20%20at%2012.48.11%20AM.png?itok=Vd9gPwi"
+          alt="whispering" />
+        <section class="card-content">
+          <h3 class="destination-title">The Whispering Palms Resort, Badagry</h3>
           <p class="destination-brief">
             Relax on your honeymoon and take in the beautiful palm-lined beach</p>
-  
-           
-          </section>
-          </div>
-  
-          <div class="destination-card">
-            <img
-        src="https://blog.sugar.ng/files/styles/width-640/public/lamangailashe.com-LaManga-Buildings-I.jpg?itok=ggJMHZjJ"
-        alt="beach resort"
-      />
-          <section class="card-content">
-            <h3 class="destination-title">La Manga Beach Resort</h3>
+
+
+        </section>
+      </div>
+
+      <div class="destination-card">
+        <img data-aos="zoom-in-up"
+          src="https://blog.sugar.ng/files/styles/width-640/public/lamangailashe.com-LaManga-Buildings-I.jpg?itok=ggJMHZjJ"
+          alt="beach resort" />
+        <section class="card-content">
+          <h3 class="destination-title">La Manga Beach Resort</h3>
           <p class="destination-brief">
             The villas are all about luxury lodging, and when you step out, the
             stately coconut trees provide the perfect roof for a romantic picnic </p>
-  
-            
-          </section>
-          </div>
-          </div>
-          
-  
-          <div class="section destination-card-wrapper">
-            <div class="destination-card">
-              <img
-              src="https://blog.sugar.ng/files/styles/width-640/public/lekkileisurelake-Screen%20Shot%202016-05-20%20at%201.02.31%20AM.png?itok=v_eFp2zE"
-              alt="leisure lake"
-            />
-            <section class="card-content">
-              <h3 class="destination-title">Lekki Leisure Lake</h3>
-            <p class="destination-brief">
-              This awesome place in Lekki keeps flying under the radar. You can take
-              romantic boat rides or chase thrills on a jet ski.</p>
-  
-             
-            </div>
-  
-  
-            <div class="destination-card">
-              <img
-              src="https://blog.sugar.ng/files/styles/width-640/public/suninternational-com-federal-palace-exterior-evening.jpg.sunimage.1400.730.jpg?itok=wr0tHiSG"
-              alt="hotel"
-            />
-            <section class="card-content">
-              <h3 class="destination-title">The Federal Palace Hotel</h3>
-            <p class="destination-brief">
-              If your dream honeymoon features indoor pampering and sand-free shoes, get
-              it world-class at The Federal Palace Hotel.</p>
-             
-            </section>
-            </div>
-  
-  
-            <div class="destination-card">
-              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/3c/f6/0c/cascade-wellness-resort.jpg?w=1200&h=-1&s=1" alt="resort"/>
-            <section class="card-content">
-              <h3 class="destination-title"> Cascade Wellness Resort</h3>
-            <p class="destination-brief">
-              Enjoying a truly unique and stunning cliff-top location,</p>
-  
-        
-            </div>
-            </div>
-            </section>
-    </section>
-    </section>
 
-    <section class="footer">
 
-      <div class="box-container">
-  
-          <div class="box">
-              <h3>about us</h3>
-              <p>TiideXplore offers you the best travel/tourist experience here in Lagos, Nigeria. When was the last time you did something for the first time? Explore with us!</p>
-          </div>
-          <div class="box">
-              <h3>branch locations</h3>
-              <a href="#">Lekki</a>
-              <a href="#">Ikeja</a>
-              <a href="#">Victoria Island</a>
-              <a href="#">Ajah</a>
-          </div>
-          <div class="box">
-              <h3>quick links</h3>
-              <a href="#">home</a>
-              <a href="#">book</a>
-              <a href="#">packages</a>
-              <a href="#">services</a>
-              <a href="#">gallery</a>
-              <a href="#">review</a>
-              <a href="#">contact</a>
-          </div>
-          <div class="box">
-              <h3>follow us on</h3>
-              <a href="#">facebook</a>
-              <a href="#">instagram</a>
-              <a href="#">twitter</a>
-              <a href="#">linkedin</a>
-          </div>  
-  
+        </section>
       </div>
-  
-      <h1 class="credit"> Copyright @ <span> TiideXplore </span> 2022 | all rights reserved! </h1>
-  
+    </div>
+
+
+    <div class="section destination-card-wrapper">
+      <div class="destination-card">
+        <img data-aos="zoom-in-up"
+          src="https://blog.sugar.ng/files/styles/width-640/public/lekkileisurelake-Screen%20Shot%202016-05-20%20at%201.02.31%20AM.png?itok=v_eFp2zE"
+          alt="leisure lake" />
+        <section class="card-content">
+          <h3 class="destination-title">Lekki Leisure Lake</h3>
+          <p class="destination-brief">
+            This awesome place in Lekki keeps flying under the radar. You can take
+            romantic boat rides or chase thrills on a jet ski.</p>
+
+
+      </div>
+
+
+      <div class="destination-card">
+        <img data-aos="zoom-in-up"
+          src="https://blog.sugar.ng/files/styles/width-640/public/suninternational-com-federal-palace-exterior-evening.jpg.sunimage.1400.730.jpg?itok=wr0tHiSG"
+          alt="hotel" />
+        <section class="card-content">
+          <h3 class="destination-title">The Federal Palace Hotel</h3>
+          <p class="destination-brief">
+            If your dream honeymoon features indoor pampering and sand-free shoes, get
+            it world-class at The Federal Palace Hotel.</p>
+
+        </section>
+      </div>
+
+
+      <div class="destination-card">
+        <img
+        data-aos="zoom-in-up"
+          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/3c/f6/0c/cascade-wellness-resort.jpg?w=1200&h=-1&s=1"
+          alt="resort" />
+        <section class="card-content">
+          <h3 class="destination-title"> Cascade Wellness Resort</h3>
+          <p class="destination-brief">
+            Enjoying a truly unique and stunning cliff-top location,</p>
+
+
+      </div>
+    </div>
   </section>
-  </div>
-  </div>
-  </body>
-  </html>
+  </section>
+  </section>
+
+  <section class="footer">
+
+    <div class="box-container">
+
+      <div class="box">
+        <h3>about us</h3>
+        <p>TiideXplore offers you the best travel/tourist experience here in Lagos, Nigeria. When was the last time you
+          did something for the first time? Explore with us!</p>
+      </div>
+      <div class="box">
+        <h3>branch locations</h3>
+        <a href="#">Lekki</a>
+        <a href="#">Ikeja</a>
+        <a href="#">Victoria Island</a>
+        <a href="#">Ajah</a>
+      </div>
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="#">home</a>
+        <a href="#">book</a>
+        <a href="#">packages</a>
+        <a href="#">Connect</a>
+        <a href="#">gallery</a>
+        <a href="#">review</a>
+        <a href="#">contact</a>
+      </div>
+      <div class="box">
+        <h3>follow us on</h3>
+        <a href="#">facebook</a>
+        <a href="#">instagram</a>
+        <a href="#">twitter</a>
+        <a href="#">linkedin</a>
+      </div>
+
+    </div>
+
+    <h1 class="credit"> Copyright @ <span> TiideXplore </span> 2022 | all rights reserved! </h1>
+
+  </section>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

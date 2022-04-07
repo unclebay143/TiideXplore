@@ -9,7 +9,6 @@
   outline: none;
   border: none;
   text-decoration: none;
-  transition: all 0.2s linear;
 }
 :root {
   /* colors */
@@ -37,7 +36,6 @@ body a {
 
 header section {
   padding: 2rem 9%;
-  
 }
 
 .heading {
@@ -79,12 +77,12 @@ header {
   top: 0;
   left: 0;
   right: 0;
-   background-color: #04566e; 
+  /* background-color: #04566e;  */
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 9%;
+  padding: 3.5rem 9%;
 }
 
 header .logo {
@@ -97,6 +95,10 @@ header .logo {
 header .logo span {
   font-size: 2.8rem;
   color: #b4d330;
+}
+
+header nav{
+  z-index: 900;
 }
 
 header .navbar a {
@@ -130,19 +132,40 @@ header .icons i:hover {
   display: none;
 }
 
+#home-active{
+  color: #b4d330;
+}
+
+
 .home {
-  background-image: url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
-  background-size: cover;
-  background-position: 100%;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  position: relative;
-  z-index: 0;
-  padding: 2rem 9%;
-  opacity: 80%;
-  margin-bottom: 70px;
+  background: linear-gradient(30deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+    background-size: cover;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+    padding: 2rem 9%;
+}
+
+.header-overlay{
+  background-color: 0 0 0 0.3; 
+  position: absolute;
+  height: 90vh; 
+  width: 100%;
+}
+
+.overlay{
+  background-color: black; 
+  position: absolute;
+  height: 90vh; 
+  width: 100%;
+  
 }
 
 .home .content {
@@ -172,6 +195,9 @@ header .icons i:hover {
 .home .content p {
   font-size: 30px;
   color: #fff;
+  /* width: 69%;
+  background-color: rgba(0, 0, 0, 0.2); */
+  opacity: 1;
   padding: 0.5rem 0;
   text-align: left;
   margin-top: 10px;
@@ -197,7 +223,6 @@ header .icons i:hover {
   color: #fff;
 } */
 
-
 /* PACKAGE CARDS */
 
 .section h2{
@@ -206,12 +231,13 @@ header .icons i:hover {
   color: black;
   text-transform: uppercase;
   text-align: center;
-}
+  margin-top: 4rem;
+ }
 
 .destination-card-wrapper {
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 50px;
   margin-top: 2rem;
   margin-left: 8rem;
   margin-right: 8rem;
@@ -229,14 +255,14 @@ header .icons i:hover {
   margin-top: 2rem;
 }
 
-.destination-card img {
+img {
  width: 100%;
- height: 200%;
+ height: 200px;
 }
 
 .card-content {
-    width: 300px;
-    padding: 2px 16px;
+    /* width: 300px; */
+    padding: 2px 0;
     padding-top: 2rem;
 }
 
@@ -251,11 +277,17 @@ header .icons i:hover {
   display: flex;
   font-family: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto&display=swap');
 }
+.active{
+  font-weight: 800;
+  text-decoration: underline;
 
+}
 
 /* FOOTER SECTION */
 .footer {
   background-color: #04566e;
+  padding: 30px 50px;
+
 }
 
 .footer .box-container {
@@ -268,6 +300,7 @@ header .icons i:hover {
 .footer .box-container .box {
   padding: 1rem 0;
   flex: 1 1 25rem;
+  width: 100%;
 }
 
 .footer .box-container .box h3 {
@@ -280,6 +313,7 @@ header .icons i:hover {
   font-size: 1.5rem;
   padding: 0.7rem 0;
   color: #eee;
+  line-height: 1.5;
 }
 
 .footer .box-container .box a {

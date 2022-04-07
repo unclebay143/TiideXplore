@@ -9,7 +9,7 @@
   outline: none;
   border: none;
   text-decoration: none;
-  transition: all 0.2s linear;
+  /* transition: all 0.2s linear; */
 }
 :root {
   /* colors */
@@ -212,17 +212,16 @@ header .icons i:hover {
 .section h2 {
   font-size: 25px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 70px;
   text-transform: uppercase;
   text-align: center;
 }
 /* Services*/
 .services {
-  margin: 0 auto;
+  margin-top: 100px;
+  margin: 100px auto;
   /* text-align: center; */
-}
-.service p {
-  font-size: 100%;
 }
 .services-wrapper {
   display: flex;
@@ -239,16 +238,21 @@ header .icons i:hover {
   margin: 10px;
 }
 .service h4 {
-  font-size: 130%;
+  font-size: 17px;
+  margin: 10px 0;
 }
-.service:hover {
-  opacity: 0.6;
-  background-color: transparent;
+.service p {
+  font-size: 14px;
 }
 .service img {
   width: 190px;
   height: 150px;
 }
+.service img:hover {
+  opacity: 0.6;
+  background-color: transparent;
+}
+
 /* Hotel */
 
 .place-card-wrapper {
@@ -268,10 +272,12 @@ header .icons i:hover {
   width: 47%;
   height: auto;
   padding: 0 3%;
+  height: 450px;
   /* background-color: red; */
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .place-card h6 {
+  font-size: 14px;
   margin: 3px 0;
 }
 .btns {
@@ -298,7 +304,11 @@ header .icons i:hover {
 }
 .card-content {
   width: 80%;
-  font-size: 140%;
+  /* font-size: 140%; */
+}
+.card-content h3{
+  font-size: 16px;
+  margin: 10px 0;
 }
 
 /* Apartment */
@@ -318,7 +328,8 @@ header .icons i:hover {
   cursor: pointer;
 }
 .apartment-card h5 {
-  margin: 5px 0;
+  font-size: 14px;
+  margin: 10px 0;
 }
 .apartment-card img:hover {
   opacity: 0.7;
@@ -328,11 +339,11 @@ header .icons i:hover {
 }
 .apartment-card a {
   padding-top: 10px;
-  font-size: 120%;
+  font-size: 14px;
 }
-.apartment-card h5 {
+/* .apartment-card h5 {
   font-size: 120%;
-}
+} */
 .apartment-card a:hover {
   text-decoration: underline;
   /* line-height: ; */
@@ -371,17 +382,19 @@ header .icons i:hover {
 }
 .food .card-content {
   width: 80%;
-  font-size: 70%;
+  /* font-size: 70%; */
 }
 .rest-card h3 {
   color: white;
-  margin: 3px 0;
+  margin: 10px 0;
+  font-size: 16px;
 }
 .rest-card h6 {
-  font-size: 75%;
+  font-size: 14px;
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   height: 20px;
+  line-height: 1.2;
 }
 .btn-s {
   padding: 5px 10px;
@@ -417,7 +430,7 @@ header .icons i:hover {
   width: 30%;
 }
 .taxi-card h3 {
-  font-size: 170%;
+  font-size: 18px;
   padding: 5px 0;
 }
 .taxi-card img {
@@ -429,8 +442,10 @@ header .icons i:hover {
   cursor: pointer;
 }
 .taxi-card p {
-  font-size: 100%;
+  font-size: 14px;
   width: 80%;
+  margin: 10px 0;
+  line-height: 1.3;
 }
 .taxi-card a {
   color: var(--primary);
@@ -476,16 +491,17 @@ header .icons i:hover {
   height: 100px;
 } */
 .car-card h5 {
-  font-size: 120%;
+  font-size: 14px;
   /* height: 15px; */
-  margin: 3px 0;
+  margin: 10px 0;
 }
 .car img {
   width: 250px;
   height: 150px;
 }
 .car-brief {
-  font-size: 110%;
+  font-size: 14px;
+  margin: 10px 0;
   /* height: 25px; */
 }
 
@@ -660,6 +676,9 @@ header .icons i:hover {
     margin: 0 auto;
     width: 100%;
   }
+
+ 
+
   .service img {
     width: 90%;
   }

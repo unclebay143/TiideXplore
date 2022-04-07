@@ -9,8 +9,17 @@
   outline: none;
   border: none;
   text-decoration: none;
-  transition: all 0.2s linear;
 }
+
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+ */
+
 
 html {
   font-size: 62.5%;
@@ -19,8 +28,17 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  /* colors */
+
+  --primary: #04556e;
+  --secondary: #022831;
+  -tertiary: #689368;
+}
+
 section {
   padding: 2rem 9%;
+  
 }
 
 .heading {
@@ -67,7 +85,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 9%;
+  padding: .2rem 9%;
+
 }
 
 header .logo {
@@ -82,14 +101,30 @@ header .logo span {
   color: #b4d330;
 }
 
-header .navbar a {
+header .navbar  {
+  float: right;
+  margin-right: 20px;
+
+  
+} 
+
+header .navbar li {
+    display: inline-block;
+    line-height: 80px;
+    /* margin: 0 5px; */
+}
+
+header .navbar li a {
   color: #fff;
   font-size: 2rem;
-  margin: 0 0.8rem;
+  margin: 0 0.8rem; 
+ 
+  
 }
 
 header .navbar a:hover {
   color: #022831;
+  transition: .5s;
 }
 
 header .icons i {
@@ -103,6 +138,19 @@ header .icons i:hover {
   color: #022831;
 }
 
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
 #menu-bar {
   color: #fff;
   border: 0.1rem solid #fff;
@@ -112,14 +160,63 @@ header .icons i:hover {
   cursor: pointer;
   display: none;
 }
+.active{
+  font-weight: 800;
+  text-decoration: underline;
+
+}
+
+@media (max-width: 952px){
+  header .navbar li a{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  .navbar{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #022831;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  header .navbar li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  header .navbar li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ .navbar{
+    left: 0;
+  }
+}
+
+
+
+
+
 
 /* Activities page */
 
 .home {
-  background-image: url(
-    https://nevadahotelsandsuites.com/wp-content/uploads/2021/02/Tourist-Attractions-in-Lagos-1.jpg
+  background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(
+    https://images.unsplash.com/photo-1593739742226-5e5e2fdb1f1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
     );
+    /* https://images.unsplash.com/photo-1525026198548-4baa812f1183?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1334&q=80 */
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: 100%;
   height: 100vh;
   display: flex;
@@ -129,7 +226,6 @@ header .icons i:hover {
   z-index: 0;
   padding: 2rem 9%;
 }
-
 
 .home .content {
   margin-left: 10px;
@@ -145,8 +241,18 @@ header .icons i:hover {
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
+/* MEDIA QUERY FOR CONTENT H2 */
+ @media (max-width: 600px) {
+  .home .content h2 {
+    font-size: 50px;
+    
+   
+  }
+} 
+
+
 .home .content h3 {
-  font-size: 48px;
+  font-size: 52px;
   font-weight: normal;
   text-align: left;
   color: #fff;
@@ -154,45 +260,16 @@ header .icons i:hover {
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
-.home .content p {
-  font-size: 24px;
-  color: #fff;
-  padding: 0.5rem 0;
-  text-align: left;
-}
-
-.home .discover {
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 26px;
-  background-color: #04566e;
-  width: 20%;
-  border-radius: 10px;
-  text-align: center;
-  margin-top: 70px;
-}
-
-.home .discover:hover {
-  background-color: #022831;
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-body{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: poppins, sans-serif;
-}
-:root {
-    /* colors */
-  
-    --primary: #04556e;
-    --secondary: #022831;
-    -tertiary: #689368;
+/* MEDIA QUERY FOR CONTENT H3 */
+ @media (max-width: 600px) {
+  .home .content h3 {
+    font-size: 50px;
+    text-align: left;
+    /* color: #022831; */
+    font-weight: bold;
+   
   }
-  
+} 
 
 
 
@@ -227,26 +304,35 @@ body{
 
 .container-paragraph {
     margin: 0 auto;
-    width: 70%;
+    width: 40%;
     line-height: 1.5;
     word-spacing: .1rem;
     font-size: 15px;
   
 }
+/* MEDIA QUERY FOR CONTAINER PARAGRAPGH */
+@media (max-width: 600px) {
+  .container-paragraph{
+    font-size: 12px;
+    line-height: 1.2;
+   
+    
+  }
+}
+
 
 /* SECTION */
 .section {
-    padding: 10px;
-    /* border: 5px solid blue; */
+     padding: 10px;
   
 }
 
 .section h2 {
-    /* font-size: 40px; */
+    font-size: 20px;
     padding: 20px 0;
     font-weight: bold;
     color: var(--secondary);
-    margin-bottom: 10px 0;
+    margin: 50px 0;
     text-transform: uppercase;
     text-align: center;
     transition: all .2s;
@@ -260,21 +346,31 @@ body{
     justify-content: center;
     align-items: center;
     gap: 70px;
-     margin-bottom: 20px; 
-     margin-top: 10px;
-    /* border: 5px solid red; */
+    margin-bottom: 20px; 
+    margin-top: 10px;
+    
+    /* border: 5px solid red;  */
 }
+
+/* MEDIA QUERY FOR PROJECT CARD WRAPPER */
+@media (max-width: 600px) {
+  .project-card-wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+   
+  }
+}
+
 
 .project-card {
     padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
-     /* width: 27%;  */
-  
-    
-    
-    
+    max-width: 300px; 
 }
 
 .project-card:hover {
@@ -283,32 +379,78 @@ body{
 
 .project-card-img {
     width: 100%;
-    height: 250px;
+    height: 200px;
     overflow: hidden;
+    /* border: 2px solid red; */
 }
 
+@media only screen and (max-width: 600px) {
+  .project-card-img { 
+    width: 100%;  
+    overflow: hidden;
+
+  }
+}
 .card-content {
-    width: 300px;
-    padding: 2px 10px;
+    /* width: 300px; */
+    padding: 10px 0;
+  
     
 }
+
+/* media query for card-content */
+@media (max-width: 600px) {
+  .card-content {
+    display: inline-block;
+    font-size: 10px;
+    width: 100%;
+    
+    
+  }
+}
+
 
 .project-title {
     color: var(--secondary);
     text-align: center;
-    margin-bottom: 10px;
-    font-size: 17px;
+    margin: 10px 0;
+    font-size: 15px;
     text-transform: uppercase;
     overflow: hidden;
     
 }
 
+/* media query foor project-title */
+
+
+@media (max-width: 600px) {
+
+  .project-title {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    
+  }
+} 
+
+
+
 .project-brief {
     font-size: 15px;
     text-align: center;
     overflow: hidden;
-
 }
+
+@media (max-width: 600px) {
+  .project-brief {
+    display: block;
+    font-size: 10px;
+    text-align: center;    
+  }
+} 
+
+
+
     
 /* button */
 .btns {
@@ -337,21 +479,27 @@ hr {
     border-width: 1px;
     width: 90%;
   } 
+
+  
+
+
 /* FOOTER SECTION */
 .footer {
   background-color: #04566e;
-  padding: 2rem 9%;
 }
 
 .footer .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+  
 }
 
 .footer .box-container .box {
   padding: 1rem 0;
   flex: 1 1 25rem;
+  width: 100%;
+
 }
 
 .footer .box-container .box h3 {
@@ -364,6 +512,7 @@ hr {
   font-size: 1.5rem;
   padding: 0.7rem 0;
   color: #eee;
+  line-height: 1.5;
 }
 
 .footer .box-container .box a {
@@ -390,35 +539,4 @@ hr {
 
 .footer .credit span {
   color: #b4d330;
-}
-@media only screen and (max-width: 900px) {
-  .about{
-      padding: 0 10px;
-  }
-  .founder{
-      padding:50px 20px 50px 20px;
-  }
-  .founder-wrapper{
-      display: block;
-  }
-  .f-card{
-      margin-bottom: 30px;
-  }
-  .fun-fact{
-      padding-left: 20px;
-      padding-right: 20px;
-  }
-  .fast-wrapper{
-      display: grid;
-      grid-template-columns: 45% 45%;
-      justify-content: space-between;
-  }
-  .fast-card{
-      margin-bottom: 30px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .fast-wrapper{
-      display: block;
-  }
 }
