@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width>, initial-scale=1.0" />
-    <title>Destination | TiideXplore</title>
-    <link rel="stylesheet" href="./../assets/css/destination.css">
-  </head>
-  <body>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiideXplore</title>
      <!-- CUSTOM CSS LINK  -->
      <link rel="stylesheet" href="./../assets/css/destination.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- NAVBAR SECTION -->
@@ -60,7 +57,7 @@
     <section class="section destination-section" id="destination">
         <h2 class="getaway">Weekend Getaway</h2>
   
-        <div class="section destination-card-wrapper">
+        <div data-aos="zoom-in-up" class="section destination-card-wrapper">
           <div class="destination-card">
             <img
             src="https://nevadahotelsandsuites.com/wp-content/uploads/2021/02/The-Nike-center-for-Art-and-Culture-1320x848.jpg"
@@ -105,7 +102,7 @@
           </div>
         </div>
         
-          <div class="section destination-card-wrapper">
+          <div data-aos="zoom-in-up" class="section destination-card-wrapper">
           <div class="destination-card">
             <img
         src="https://nevadahotelsandsuites.com/wp-content/uploads/2021/02/Tarkwa-Bay-Beach-1320x848.jpg"
@@ -157,7 +154,7 @@
       <section class="section destination-section" id="destination">
         <h2 class="honeymoon">Honeymoon</h2>
   
-        <div class="section destination-card-wrapper">
+        <div data-aos="zoom-in-up" class="section destination-card-wrapper">
           <div class="destination-card">
             <img
             src="https://blog.sugar.ng/files/styles/width-640/public/enroute-ng-la-campagne-tropicana-resort-888-60a99ed9e11730e3d4b7591e5e2869aa793295e....jpg?itok=RlzCNrWh"
@@ -205,7 +202,7 @@
           </div>
           
   
-          <div class="section destination-card-wrapper">
+          <div data-aos="zoom-in-up" class="section destination-card-wrapper">
             <div class="destination-card">
               <img
               src="https://blog.sugar.ng/files/styles/width-640/public/lekkileisurelake-Screen%20Shot%202016-05-20%20at%201.02.31%20AM.png?itok=v_eFp2zE"
@@ -290,5 +287,9 @@
   </section>
   </div>
   </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
   </html>
