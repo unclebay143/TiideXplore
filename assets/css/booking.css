@@ -9,7 +9,12 @@
   outline: none;
   border: none;
   text-decoration: none;
-  transition: all 0.2s linear;
+}
+
+.active{
+  font-weight: 800;
+  text-decoration: underline;
+
 }
 
 html {
@@ -325,6 +330,7 @@ label {
   font-size: 1.5rem;
   padding: 0.7rem 0;
   color: #eee;
+  line-height: 1.5;
 }
 
 .footer .box-container .box a {

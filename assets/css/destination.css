@@ -9,7 +9,6 @@
   outline: none;
   border: none;
   text-decoration: none;
-  transition: all 0.2s linear;
 }
 :root {
   /* colors */
@@ -98,6 +97,10 @@ header .logo span {
   color: #b4d330;
 }
 
+header nav{
+  z-index: 900;
+}
+
 header .navbar a {
   color: #fff;
   font-size: 2rem;
@@ -137,17 +140,17 @@ header .icons i:hover {
 .home {
   background: linear-gradient(30deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
     url(https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
-  background-size: cover;
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: 100%;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  position: relative;
-  z-index: 0;
-  padding: 2px 10px;
+    background-size: cover;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+    padding: 2rem 9%;
 }
 
 .header-overlay{
@@ -252,14 +255,14 @@ header .icons i:hover {
   margin-top: 2rem;
 }
 
-.destination-card img {
+img {
  width: 100%;
- height: 200%;
+ height: 200px;
 }
 
 .card-content {
-    width: 300px;
-    padding: 2px 16px;
+    /* width: 300px; */
+    padding: 2px 0;
     padding-top: 2rem;
 }
 
@@ -274,11 +277,17 @@ header .icons i:hover {
   display: flex;
   font-family: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto&display=swap');
 }
+.active{
+  font-weight: 800;
+  text-decoration: underline;
 
+}
 
 /* FOOTER SECTION */
 .footer {
   background-color: #04566e;
+  padding: 30px 50px;
+
 }
 
 .footer .box-container {
@@ -304,6 +313,7 @@ header .icons i:hover {
   font-size: 1.5rem;
   padding: 0.7rem 0;
   color: #eee;
+  line-height: 1.5;
 }
 
 .footer .box-container .box a {

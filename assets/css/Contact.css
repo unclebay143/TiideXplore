@@ -9,7 +9,6 @@
   outline: none;
   border: none;
   text-decoration: none;
-  transition: all 0.2s linear;
 }
 
 html {
@@ -240,7 +239,7 @@ form{
 
 .contact-container{
   width: 400px;
-  height: 100vh;
+  /* height: 100vh; */
   margin: auto;
   padding: 10px 20px;
   border: 1px solid #fff;
@@ -490,6 +489,13 @@ input[type=submit]:hover {
   font-size: 24px;
   color: #fff;
   font-weight: bold;
+  padding: 20px 0;
+}
+
+.active{
+  font-weight: 800;
+  text-decoration: underline;
+
 }
 
 label {
@@ -526,6 +532,7 @@ label {
   font-size: 1.5rem;
   padding: 0.7rem 0;
   color: #eee;
+  line-height: 1.5;
 }
 
 .footer .box-container .box a {
