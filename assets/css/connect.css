@@ -173,7 +173,7 @@ header .icons i:hover {
 
 /* CONNECT SECTION */
 .connect {
-  margin-top: -40px;
+  margin-top: -140px;
 }
 
 .container__wrapper{
@@ -183,7 +183,7 @@ header .icons i:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 35px;
+  /* padding: 10px; */
   margin-bottom: 100px;
 }
 
@@ -285,7 +285,7 @@ small {
   letter-spacing: 1px;
   cursor: pointer;
   transition: 0.5s;
-  margin-top: -15px;
+  margin-top: 80px;
 }
 .see_more_btn:hover {
   color: white;
@@ -374,12 +374,14 @@ small {
 /* FOOTER SECTION */
 .footer {
   background-color: #04566e;
+  padding: 20px 90px;
 }
 
 .footer .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
+  padding: 0px 20px;
 }
 
 .footer .box-container .box {
