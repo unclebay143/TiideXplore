@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./../assets/css/connect.css">
     <script src="https://use.fontawesome.com/74fd32194c.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -94,7 +95,7 @@
                 </div>
             </div>
         </div>
-        <div class="container__wrapper"> <br> <br> <br>
+        <div class="container__wrapper" data-aos="fade-left"> <br> <br> <br>
             <div class="card__container">
                 <div class="card__connect">
                     <img class="connect__image" src="../assets/img/Herbalist 2.jpg" alt="">
@@ -130,7 +131,7 @@
                 </div>
             </div>
         </div>
-        <div class="container__wrapper"> <br> <br> <br>
+        <div class="container__wrapper" data-aos="fade-right"> <br> <br> <br>
             <div class="card__container">
                 <div class="card__connect">
                     <img class="connect__image" src="../assets/img/Barniee.png" alt="">
@@ -166,7 +167,7 @@
                 </div>
             </div>
         </div>
-        <div class="container__wrapper"> <br> <br> <br>
+        <div class="container__wrapper" data-aos="fade-left"> <br> <br> <br>
             <div class="card__container">
                 <div class="card__connect">
                     <img class="connect__image" src="../assets/img/Tobi.jpg" alt="">
@@ -270,7 +271,7 @@
 </div>
 
     
-
+    <!-- Connect request sent pop-up -->
     <script>
         let popup = document.getElementById('connect-card');
 
@@ -282,6 +283,15 @@
             popup.classList.remove('open-pop');
         }
     </script>
+
+    <!-- Animation -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+            offset: 150,
+            duration: 1000
+        });
+      </script>
 </body>
 
 </html>
