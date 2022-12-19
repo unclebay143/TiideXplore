@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
 /* - Color scheme
 - Murky Teal – #022831
@@ -11,7 +11,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-display: "poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+
 }
 
 /* Header Section */
@@ -24,7 +25,6 @@
     outline: none;
     border: none;
     text-decoration: none;
-    transition: all 0.2s linear;
   }
   :root {
     /* colors */
@@ -144,7 +144,8 @@
   
 
   .home {
-    background-image: url(https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=821&q=80);
+    /* background-image: url(https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=821&q=80); */
+    background-image: url(https://images.unsplash.com/photo-1484712401471-05c7215830eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
     /* background-image: url(https://images.unsplash.com/photo-1608846376283-4e219eb75191?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80); */
     background-size: cover;
     background-position: 100%;
@@ -177,9 +178,9 @@
     text-align: left;
     color: #fff;
     text-transform: none;
-    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+    /* text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1); */
     margin-top: 20px;
-    text-shadow: 5px 2px 3px #000000;
+    /* text-shadow: 5px 2px 3px #000000; */
   }
   
   .home .content h3 {
@@ -189,7 +190,7 @@
     color: #fff;
     margin-top: 10px;
     text-transform: none;
-    text-shadow: 5px 2px 4px #000000;
+    /* text-shadow: 5px 2px 4px #000000; */
     /* text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1); */
   }
   
@@ -209,6 +210,9 @@
     color: #434343;
     text-align: center;
     justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .inner {
@@ -225,6 +229,7 @@
 .guest {
     font-size: 25px;
     padding: 20px 0;
+    margin: 50px 0;
 }
 
 .row-container {
@@ -337,7 +342,11 @@
     cursor: pointer;
     transition: .5s;       
 }   
+.active{
+  font-weight: 800;
+  text-decoration: underline !important;
 
+}
 button.active-button {
     width: 40px;
     border-radius: 50px;
